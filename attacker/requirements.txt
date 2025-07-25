@@ -1,0 +1,13 @@
+# Minimal requirements for attacker container
+# Core functionality only - no development dependencies
+
+# System monitoring
+psutil>=5.8.0
+
+# Enhanced output formatting
+colorama>=0.4.4
+rich>=12.0.0
+
+# JSON handling (built-in)
+# socket, struct, threading (built-in)
+# time, random, argparse (built-in)

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ARP DoS Storm Lab - Monitoring Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta http-equiv="refresh" content="5">
+</head>
+<body>
+    <div class="container">
+        <h1>🔥 ARP DoS Storm Lab - Live Monitor</h1>
+        
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-label">Containers Active</div>
+                <div class="metric-value status-good">{{ metrics.containers_active }}</div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-label">Network Traffic</div>
+                <div class="metric-value status-warning">{{ metrics.network_traffic }}</div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-label">ARP Packets/sec</div>
+                <div class="metric-value status-danger">{{ metrics.arp_packets_per_sec }}</div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-label">Attack Status</div>
+                <div class="metric-value">{{ metrics.attack_status }}</div>
+            </div>
+        </div>
+        
+        <div class="logs-section">
+            <h3>📋 Recent Activity</h3>
+            <div id="logs">
+                {% for log in recent_logs %}
+                <div class="log-entry">
+                    <strong>{{ log.timestamp }}</strong> [{{ log.container }}] {{ log.message }}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 20px; opacity: 0.7;">
+            <small>Last updated: {{ current_time }} | Auto-refresh every 5 seconds</small>
+        </div>
+    </div>
+</body>
+</html>
