@@ -20,7 +20,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy victim-specific files
 COPY victim_main.py .
-COPY services.py .
 COPY utils.py .
 
 # Create directories

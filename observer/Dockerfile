@@ -23,7 +23,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy observer-specific files
 COPY arp_analyzer.py .
 COPY observer_main.py .
-COPY web_monitor.py .
+COPY utils.py .
 COPY utils.py .
 
 # Create directories
