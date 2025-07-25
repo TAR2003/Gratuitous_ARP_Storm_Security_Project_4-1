@@ -438,3 +438,4 @@
 {"timestamp": "2025-07-25T19:04:59.718617", "container": "victim", "event_type": "network_activity", "message": "Periodic gateway ping successful", "data": {}}
 {"timestamp": "2025-07-25T19:05:30.125841", "container": "victim", "event_type": "network_activity", "message": "Periodic gateway ping successful", "data": {}}
 {"timestamp": "2025-07-25T19:06:00.552065", "container": "victim", "event_type": "network_activity", "message": "Periodic gateway ping successful", "data": {}}
+{"timestamp": "2025-07-25T19:06:31.632654", "container": "victim", "event_type": "network_activity", "message": "Periodic gateway ping successful", "data": {}}
