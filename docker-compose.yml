@@ -88,10 +88,12 @@ services:
     container_name: arp_web_monitor
     hostname: web_monitor
     ports:
-      - "8080:8080"  # Web dashboard interface
+      - "8080:8080"  # Bind to monitoring interface
     networks:
-      arp_lab:
+      arp_lab:  # For lab communication
         ipv4_address: 10.0.1.40
+      monitor_net:  # Dedicated monitoring network
+        ipv4_address: 192.168.100.10
     volumes:
       - ./logs:/app/logs
       - ./results:/app/results
@@ -111,13 +113,18 @@ services:
     tty: true
     command: ["python", "monitor_main.py"]
 
+
 networks:
   arp_lab:
     driver: bridge
     ipam:
       config:
         - subnet: 10.0.1.0/24
-          gateway: 10.0.1.1
+  monitor_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.100.0/24
 
 volumes:
   logs:

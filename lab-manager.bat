@@ -83,7 +83,7 @@ call :check_prerequisites
 if errorlevel 1 exit /b 1
 
 call :print_status "Building containers..."
-docker-compose build --no-cache
+docker-compose build
 call :print_status "Containers built successfully!"
 goto :eof
 
