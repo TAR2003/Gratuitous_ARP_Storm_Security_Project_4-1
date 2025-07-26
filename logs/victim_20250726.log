@@ -130,3 +130,4 @@
 {"timestamp": "2025-07-26T05:53:51.229983", "container": "victim", "event_type": "network_activity", "message": "Periodic gateway ping successful", "data": {}}
 {"timestamp": "2025-07-26T05:54:21.288029", "container": "victim", "event_type": "network_activity", "message": "Periodic gateway ping successful", "data": {}}
 {"timestamp": "2025-07-26T05:54:51.374499", "container": "victim", "event_type": "network_activity", "message": "Periodic gateway ping successful", "data": {}}
+{"timestamp": "2025-07-26T05:55:21.428910", "container": "victim", "event_type": "network_activity", "message": "Periodic gateway ping successful", "data": {}}
