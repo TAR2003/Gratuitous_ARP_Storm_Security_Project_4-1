@@ -13,3 +13,14 @@
 {"timestamp": "2025-07-26T05:52:00.479461", "container": "observer", "event_type": "container_start", "message": "Observer container started", "data": {"observer_ip": "10.0.1.30", "monitoring_targets": ["10.0.1.10", "10.0.1.20"]}}
 {"timestamp": "2025-07-26T05:52:01.077607", "container": "observer", "event_type": "capabilities_check", "message": "Monitoring capabilities assessed", "data": {"Raw Socket Access": true, "Packet Capture": true, "Network Interface": true, "Privileged Mode": true}}
 {"timestamp": "2025-07-26T05:52:01.089063", "container": "observer", "event_type": "monitoring_started", "message": "Network monitoring started", "data": {}}
+{"timestamp": "2025-07-26T15:43:40.719193", "container": "observer", "event_type": "container_start", "message": "Observer container started", "data": {"observer_ip": "10.0.1.30", "monitoring_targets": ["10.0.1.10", "10.0.1.20"]}}
+{"timestamp": "2025-07-26T15:43:42.130949", "container": "observer", "event_type": "capabilities_check", "message": "Monitoring capabilities assessed", "data": {"Raw Socket Access": true, "Packet Capture": true, "Network Interface": true, "Privileged Mode": true}}
+{"timestamp": "2025-07-26T15:43:42.137847", "container": "observer", "event_type": "monitoring_started", "message": "Network monitoring started", "data": {}}
+{"timestamp": "2025-07-26T17:38:59.651158", "container": "observer", "event_type": "monitoring_stopped", "message": "Network monitoring stopped", "data": {}}
+{"timestamp": "2025-07-26T18:54:01.706107", "container": "observer", "event_type": "container_start", "message": "Observer container started", "data": {"observer_ip": "10.0.1.30", "monitoring_targets": ["10.0.1.10", "10.0.1.20"]}}
+{"timestamp": "2025-07-26T18:54:02.615914", "container": "observer", "event_type": "capabilities_check", "message": "Monitoring capabilities assessed", "data": {"Raw Socket Access": true, "Packet Capture": true, "Network Interface": true, "Privileged Mode": true}}
+{"timestamp": "2025-07-26T18:54:02.621343", "container": "observer", "event_type": "monitoring_started", "message": "Network monitoring started", "data": {}}
+{"timestamp": "2025-07-26T19:04:27.470677", "container": "observer", "event_type": "monitoring_stopped", "message": "Network monitoring stopped", "data": {}}
+{"timestamp": "2025-07-26T19:13:06.098172", "container": "observer", "event_type": "container_start", "message": "Observer container started", "data": {"observer_ip": "10.0.1.30", "monitoring_targets": ["10.0.1.10", "10.0.1.20"]}}
+{"timestamp": "2025-07-26T19:13:06.610396", "container": "observer", "event_type": "capabilities_check", "message": "Monitoring capabilities assessed", "data": {"Raw Socket Access": true, "Packet Capture": true, "Network Interface": true, "Privileged Mode": true}}
+{"timestamp": "2025-07-26T19:13:06.617039", "container": "observer", "event_type": "monitoring_started", "message": "Network monitoring started", "data": {}}

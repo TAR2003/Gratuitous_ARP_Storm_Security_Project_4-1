@@ -2,6 +2,22 @@
 """
 Attacker Container Main Script
 ARP DoS Storm Attack in Docker Environment
+In this code it is the main code for attacking the network using ARP storm attacks.
+This script is designed to run in a Docker container and orchestrate ARP-based attacks
+
+So, what does it do is the following
+firstly it sets up the environment from the docker-compose running, the ips of attacker, victim, gateway and observer
+it then createsd necesary directories which is used to log saving or result saving
+The shows a banner to show that its workign is starting
+It may wait for the observer if it is not ready
+Then it will show the main menu, giving us all the attack options available
+
+it used the ARP Storms attacker class to perform various ARP-based attacks
+For highly intesity node, it uses C++ file 
+The attacks are multi threaded
+
+Then it logs the information in the app/logs
+
 """
 
 import os

@@ -33,7 +33,10 @@ console = Console()
 
 class VictimServices:
     """Victim container that simulates network services"""
-    
+    """loads environment variables for configuration"""
+    """ sets up empty dictionaries for services and network stats"""
+    """CReates necessary directories"""
+    """Configures signal handlers for graceful shutdown"""
     def __init__(self):
         self.victim_ip = os.getenv('VICTIM_IP', '10.0.1.20')
         self.attacker_ip = os.getenv('ATTACKER_IP', '10.0.1.10')
@@ -63,13 +66,13 @@ class VictimServices:
         self.setup_web_routes()
     
     def signal_handler(self, signum, frame):
-        """Handle shutdown signals"""
+        """Handle shutdown signals, it user preses Control + C"""
         console.print(f"\n[yellow]Received signal {signum}, shutting down services...[/yellow]")
         self.stop_services()
         sys.exit(0)
     
     def log_event(self, event_type, message, data=None):
-        """Log events to file"""
+        """Log events to a shared /app/logs directory, in /app/logs/victim_YYYYMMDD.log format"""
         log_entry = {
             'timestamp': datetime.now().isoformat(),
             'container': 'victim',
@@ -188,7 +191,7 @@ class VictimServices:
             return jsonify({'message': 'Service responding normally', 'timestamp': datetime.now().isoformat()})
     
     def start_web_service(self):
-        """Start web service"""
+        """Start web service, start the flask server"""
         def run_flask():
             self.app.run(host='0.0.0.0', port=80, debug=False, threaded=True)
         
@@ -199,6 +202,8 @@ class VictimServices:
     
     def start_echo_service(self):
         """Start echo service for connectivity testing"""
+        """Counts requests in network stats"""
+        """Returns any received data"""
         import socket
         
         def echo_server():
@@ -240,6 +245,8 @@ class VictimServices:
     
     def monitor_arp_traffic(self):
         """Monitor ARP traffic for attack detection"""
+        """ Runs the arp -a every 5 mintues """
+        """Flags rapid ARP table changes (>10 entries difference)"""
         def arp_monitor():
             console.print("[green]ARP traffic monitoring started[/green]")
             
@@ -281,6 +288,8 @@ class VictimServices:
     
     def check_connectivity(self):
         """Check connectivity to other containers"""
+        """test test network reachability"""
+        """Pings gateway and observer IPs"""
         targets = [self.gateway_ip, self.observer_ip]
         
         for target in targets:
@@ -304,6 +313,9 @@ class VictimServices:
     
     def simulate_network_activity(self):
         """Simulate normal network activity"""
+        """generates normal traffic in a network"""
+        """ periodically pings gateway and logs results"""
+
         def activity_simulator():
             console.print("[green]Network activity simulation started[/green]")
             
@@ -334,6 +346,7 @@ class VictimServices:
     
     def display_live_status(self):
         """Display live status information"""
+        """Shows real time console UI"""
         def generate_status_table():
             table = Table(title="🎯 Victim Container Live Status")
             table.add_column("Service", style="cyan")

@@ -30,7 +30,7 @@ except ImportError:
 app = Flask(__name__)
 
 class WebMonitor:
-    """Web-based monitoring dashboard"""
+    """Web-based monitoring dashboard to show the attack status, logs, and analysis results."""
     
     def __init__(self):
         self.data = {
@@ -92,6 +92,8 @@ class WebMonitor:
     
     def update_data(self):
         """Update dashboard data"""
+        """Loads logs and results, determines attack status on recent logs"""
+        """Updates container statuses, runs every 5 seconds"""
         while self.running:
             try:
                 # Load logs

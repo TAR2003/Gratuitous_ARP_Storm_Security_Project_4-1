@@ -58,3 +58,57 @@ Packet rate per thread
 Initialization and User confirmation
 
 
+Now the actual implementation
+
+a. Attacker Container
+Purpose: Simulates ARP DoS attacks.
+
+Configuration:
+
+Privileged mode and NET_ADMIN, NET_RAW capabilities for raw socket access (required for crafting packets).
+
+Static IPv4 address (10.0.1.10) on the arp_lab network.
+
+Mounts logs and results volumes for persistent storage.
+
+Environment variables define IP addresses of other components (victim, observer, gateway).
+
+Runs attacker_main.py to execute attacks.
+
+
+Victim Container
+Purpose: Acts as the target of ARP spoofing/DoS attacks.
+
+Configuration:
+
+Static IP (10.0.1.20) on arp_lab.
+
+Shares logs volume for attack logging.
+
+Runs victim_main.py to simulate services (e.g., responding to ARP requests
+
+c. Observer Container
+Purpose: Monitors and analyzes network traffic.
+
+Configuration:
+
+Privileged mode with packet capture capabilities (NET_ADMIN, NET_RAW).
+
+Static IP (10.0.1.30) on arp_lab.
+
+Mounts logs, results, and captures volumes to store PCAP files and analysis results.
+
+Runs observer_main.py to sniff traffic and detect anomalies.
+
+d. Web Monitor Container
+Purpose: Provides a dashboard (web interface) to visualize results.
+
+Configuration:
+
+Binds to host port 8080 for external access.
+
+Connected to both arp_lab (for lab communication) and monitor_net (dedicated monitoring network).
+
+Shares logs, results, and captures with other containers.
+
+Runs monitor_main.py to serve the web interface.

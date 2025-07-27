@@ -1,6 +1,63 @@
 #!/usr/bin/env python3
 """
-ARP DoS via Gratuitous ARP Storm Attack Research Tool
+ARP DoS via Gratuitous ARP Storm Attack
+
+Now this code is the main logic for the attack to happen,
+now the main code onnthe other fiule uises this class to orchestrate the attack.
+It have some classes to simulate the ARP protocol and Ethernet frames,
+The ethernet frame class as you know is used to make the correct ethernet frames
+like it includes the destination mac and source mac with type of ether, we used 0x0806 for ARP
+
+The EtherType field is a 2-byte value in an Ethernet frame that indicates what protocol 
+is encapsulated in the payload of the frame. It helps the revcevidving system how to interpret the data contained within the frame.
+
+Now we are using 0x0806 as it is the official ethertyope value assigned to ARP by the IEEE, whihc signals the packet that it contains a ARP packet
+For example 
+Protocol EtherType(Hex)Description
+IPv4 0x0800
+ARP 0x0806
+IPv6 0x86DD
+
+NOw the pack() seriaklizes thge header into bytes (which we must to transmit it over the network)
+
+Now the ARP packet class, here it constructs the ARP packets with setting the correct fielsd types
+htype means hardware type = 1 for ethernet 
+ptype means p[rotocol type = 0x0800 for IPv4
+hlen means hardware length = 6 for MAC address  
+plen means protocol length = 4 for IPv4 address
+operation means the type of ARP operation, 1 for request and 2 for reply
+sha means sender hardware address, which is the MAC address of the sender
+spa means sender protocol address, which is the IP address of the sender
+tha means target hardware address, which is the MAC address of the target
+tpa means target protocol address, which is the IP address of the target
+
+
+now we are at the main engine ARPStormAttacker class, which handles the ARP storm and poisoning attacks.
+there is some key methods for this
+create-gratuitous_arp() creates a gratuitous ARP packet, which is an ARP reply that announces the sender's own IP-MAC mapping.
+create_poisoning_arp() constructs an ARP reply that fakes the mapping to poison the target's ARP cache.
+create_ethernet_frame() wraps an ARP payload in an Ethernet frame ready to send.
+storm_worker() is a worker thread for the ARP storm attack, it generates random MAC and IP addresses, creates gratuitous ARP packets, and sends them over a raw socket.
+poison_worker() is a worker thread for targeted ARP poisoning, it forges ARP replies to poison both the victim and the gateway
+start_storm_attack() starts the ARP storm attack by launching multiple storm worker threads and monitoring their progress.
+start_poison_attack() starts the targeted ARP poisoning attack by launching a poison worker thread and monitoring its progress.
+stop_attack() stops the attack by setting the running flag to False and waiting for all threads to finish.
+main() is the entry point of the script, it parses command-line arguments, initializes the ARPStormAttacker instance, and starts the appropriate attack based on user input.
+
+
+Now the attack workflows, 
+the gratuitous arp storm flood thenetwork with fake arp packerts to disrupt comm
+what it does is generates random MAC and IP addresses for  each packet, sends ARP replies again and again inmplying that ownership of the IP. It also runs in multiple threads to intense attack.
+THe main goal is to overwhelm the swiotches and hosts with fake ARP entries, causes network DoS.
+
+Now the second one is ARP poisoning, it redirect the traffic between traffic and gateway
+What it does is actually simple, it send an ARP packet to the victim saying that I am the gateway and sends to the gateway that I am the victim, so the traffic will be redirected to the attacker.
+This allows the attacker to intercept and manipulate the traffic between the victim and the gateway
+TThus it can enable man in the middle attack, allow packet interception and modification
+You can give custom parameters as well to run these, with 
+-- storm, -- poison, -- subnet, -- targets, -- gateway, -- duration, -- threads, -- rate
+
+
 """
 
 import socket

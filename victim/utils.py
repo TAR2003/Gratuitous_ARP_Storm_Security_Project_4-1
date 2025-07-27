@@ -11,7 +11,7 @@ import subprocess
 from datetime import datetime
 
 def get_container_ip():
-    """Get container's IP address"""
+    """Get container's IP address by running 'hostname -I'"""
     try:
         result = subprocess.run(['hostname', '-I'], capture_output=True, text=True)
         return result.stdout.strip().split()[0]
@@ -19,7 +19,8 @@ def get_container_ip():
         return '127.0.0.1'
 
 def log_to_file(container_name, event_type, message, data=None):
-    """Log event to file"""
+    """Log event to a shared /app/logs directory"""
+    """All containers should use this function to log events"""
     log_entry = {
         'timestamp': datetime.now().isoformat(),
         'container': container_name,
@@ -57,6 +58,7 @@ def wait_for_service(host, port, timeout=60):
 
 def ping_host(host, count=1, timeout=5):
     """Ping a host"""
+    """This is how we can check if host is reachable"""
     try:
         result = subprocess.run(['ping', '-c', str(count), '-W', str(timeout), host],
                               capture_output=True, text=True)
