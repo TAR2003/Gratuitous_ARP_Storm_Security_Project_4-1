@@ -1,3 +1,28 @@
+/*
+THe ARP storm cpp class
+There is already a python file for the attack 
+
+The main thjing this code is significantly more powerful than its python couterpart,
+As a result this code is fast can attack more strongly to the victim server
+Also C++ can enable direct memory access. 
+Also it can just pack directly into memry 
+C++ can use sebnd() with raw socket meaning kernel bypass
+
+
+
+Now the explanation of the code, 
+the ethernet header and arp header is exactly the same as the python code
+the helper codes does it normal job, of generating random mac and ip and constructing as 
+fake ARP reply, also create Poisoning ARP create poisoned packets
+
+
+The rest of the process is the same as the python code,
+Just it used diffrent way of doing things. 
+*/
+
+
+
+
 #include <iostream>
 #include <thread>
 #include <vector>
