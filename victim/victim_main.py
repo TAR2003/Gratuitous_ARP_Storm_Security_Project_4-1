@@ -2,6 +2,34 @@
 """
 Victim Container Main Script
 Simulates network services that are targets of ARP attacks
+
+Now this is run as a victim pc, inside dockerized virtual networks
+
+its main engine is the VictimService class, which is the core
+First it loads the network initialization by loading the environment variables IPs
+Then it tracks the running services HTTP, echo, ARP monitor
+Then the network stats
+
+Now its core methods are start web services which runs the flask web server
+start echo services which is the TCP echo service at port 7
+monitor arp traffic which checks the ARP table for rapid changes
+check connectivity which pings gateway or observer
+simulate network activity which generates normal traffic
+
+
+Now it workflow
+First it displays a banner with configuration
+then it starts the services web dahsboard, echo service, ARP monitor, and network activity simulator
+
+live monitoring checks the UI upadaets after 30 seconds
+now the attack dtection
+flags if more than 10 entries change in 5 seconds
+connectivity loss detects ping fdailures to fateway observer
+no detection it sets the attack detecte true
+and logs event to app.logs/vicitm .log
+
+
+
 """
 
 import os
