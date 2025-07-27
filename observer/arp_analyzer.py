@@ -1,10 +1,59 @@
 #!/usr/bin/env python3
 """
-ARP Storm Attack Analyzer and Detection Tool
-Educational/Research Purpose Only
+ARP Storm Attack Analyzer and Detection
 
 This tool analyzes network traffic to detect ARP storm attacks
 and provides insights into the attack patterns.
+
+Now this code has some ways to do so
+the main point would eb the ARPOO analyzer class which is the core engine of the analysis
+it has different datastrcutures which tracks ther metrics
+arp_stats is like this 
+{
+    'total_packets': 0,           # Total ARP packets observed
+    'gratuitous_arp': 0,          # Gratuitous ARP replies
+    'arp_requests': 0,            # ARP requests
+    'arp_replies': 0,             # ARP replies
+    'unique_senders': set(),      # Unique MAC addresses
+    'ip_mac_pairs': {},           # IP-to-MAC mappings
+    'suspicious_activity': []     # Detected anomalies
+}
+now it has thresholds for detecting anomalies, like if 50 ARP packets are sent every second,
+ it is very suspicious
+It parses packets and decodes gratuitous ARP replies, by parsing the frames and ARP headers,
+It can identify gratuitous ARP like if the sender IP is the target IP
+
+The logic behind this is simple 
+it analyzes the packet and updates the statistics accordingly
+And also it tracks IP_MAX inconsistencies, like if an IP address has multiple MAC addresses
+now the detect anomalies method checks for suspicious patterns based on the thresholds
+like high packet rates more then 50 in a second
+excessive uinique senders more then 20 in a minute
+high gratuitous ARP ratio more then 70%
+and excessive MAC address changes for an IP more then 3 times in 5 minutes
+
+
+Now the workflow
+First it setup itself by binding itself to a network interface, and uses raw sockets 
+to capture all traffics
+NOw for each packet it filters for ARPm, by reccognising the ethertype as 0x0806 is the ethertype
+for ARP packets
+Parses and classifies according to the above standards, and then update stats
+Flags suspicious patterns
+
+NOw it has its own way top see that 
+
+DETECTION TECHNIQUES
+--------------------
+A. Threshold-Based Detection
+
+Metric                      Threshold      Attack Indicator
+----------------------------------------------------------
+ARP packets/second          > 50           Flooding as it is clear someone is trying to flood the network
+Unique MACs/minute          > 20           Distributed attack - because multiple devices are trying to spoof ARP
+Gratuitous ARP/replies      > 70%          ARP spoofing, as it indicates excessive gratuitous ARP replies
+MAC changes per IP (5 min)  > 3            IP spoofing, as it indicates an IP address is changing its MAC address too frequently
+now there is commadn line uages for --interface, --duration, --output, --quiet
 """
 
 import socket

@@ -2,6 +2,42 @@
 """
 Observer Container Main Script
 Monitors and analyzes ARP traffic for attack detection
+
+the core engine of this code is the network Observer Class
+it first initialize by loading IPs from environment variables
+
+then uses ARP Analyzer to monitor ARP traffic
+
+its main methods are 
+start packet capture which runs tcpdump to save ARP packets to a .pcap file
+the second one is analyze traffic patterns which uses ARPAnalyzer to detect anomalies
+generate attack report creates json reports with attack details and statistics
+generate attack visualization generates charts using matplotlib to visualize attack patterns
+generate live monitoring displays real-time stats using Rich library
+
+now the workflow of this file 
+Startup, shows network configuration
+And then checks the capabilites by chcking raw socket access tcpdump availability,
+ network interfaces, priviliegd mode
+ then it starts packet capture and traffic analysis monitoring
+
+
+ The attack detection
+ it does the threshold checks for 50 ARP ina second is flood attack, 20 unique MAC per minute is dsitributed attack, 70% gratuitous arp is spoofing attack
+ On detection of any attack, it logs the event and generates json reports with visualizations
+ when shutdown it saves the final report
+
+ Now its monitoring capabilities include:
+    A. Monitoring Capabilities
+    Feature              Implementation
+    -------------------  -----------------------------------------------
+    Packet Capture       tcpdump -i any -w file.pcap arp
+    Real-Time Analysis   Sliding window counters (1s/5m intervals)
+    Attack Detection     Threshold-based heuristics
+    Forensics            Saves .pcap, JSON reports, and charts
+
+
+
 """
 
 import os
