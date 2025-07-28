@@ -1,0 +1,4 @@
+{"timestamp": "2025-07-28T05:47:46.667332", "container": "defender", "event_type": "health_check", "message": "Defense system health check", "data": {"status": "active", "packets_analyzed": 4084, "threats_detected": 4069, "uptime": 330.397114276886}}
+{"timestamp": "2025-07-28T05:47:46.670168", "container": "defender", "event_type": "high_block_rate", "message": "High packet block rate: 87.44%", "data": {}}
+{"timestamp": "2025-07-28T05:48:16.705790", "container": "defender", "event_type": "health_check", "message": "Defense system health check", "data": {"status": "active", "packets_analyzed": 4084, "threats_detected": 4069, "uptime": 360.4351272583008}}
+{"timestamp": "2025-07-28T05:48:16.710461", "container": "defender", "event_type": "high_block_rate", "message": "High packet block rate: 87.44%", "data": {}}
