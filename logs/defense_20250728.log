@@ -15780,3 +15780,5 @@
 2025-07-28 05:45:45,342 - ARPDefense - CRITICAL - SECURITY ALERT: {'timestamp': '2025-07-28T05:45:45.340617', 'severity': 'HIGH', 'attack_type': 'ARP_STORM', 'source_ip': '10.0.1.214', 'source_mac': '44:de:ca:4a:ae:48', 'anomaly_score': 0.8999999999999999, 'mitigations_applied': []}
 2025-07-28 05:45:54,805 - ARPDefense - WARNING - Suspicious ARP packet detected: SRC=10.0.1.1:76:2d:2e:06:ef:61, Score=0.60, Reasons=['rapid_mac_changes']
 2025-07-28 05:45:56,522 - ARPDefense - WARNING - Suspicious ARP packet detected: SRC=10.0.1.20:f6:d8:1b:bb:04:a1, Score=0.60, Reasons=['rapid_mac_changes']
+2025-07-28 05:52:28,263 - ARPDefense - INFO - Cleaning up active mitigations
+2025-07-28 05:52:28,266 - ARPDefense - INFO - Cleaning up active mitigations

@@ -3,3 +3,6 @@
 {"timestamp": "2025-07-28T05:40:19.655141", "container": "observer", "event_type": "monitoring_started", "message": "Network monitoring started", "data": {}}
 {"timestamp": "2025-07-28T05:44:44.914993", "container": "observer", "event_type": "attack_detected", "message": "ARP storm attack detected", "data": {"packet_rate": 144, "detection_time": "2025-07-28T05:44:44.903131"}}
 {"timestamp": "2025-07-28T05:44:45.242108", "container": "observer", "event_type": "attack_report_generated", "message": "Report saved to /app/results/attack_report_20250728_054444.json", "data": {}}
+{"timestamp": "2025-07-28T05:52:39.762644", "container": "observer", "event_type": "attack_report_generated", "message": "Report saved to /app/results/attack_report_20250728_055239.json", "data": {}}
+{"timestamp": "2025-07-28T05:52:39.969669", "container": "observer", "event_type": "packet_capture_stopped", "message": "Capture saved to /app/captures/arp_capture_20250728_054019.pcap", "data": {}}
+{"timestamp": "2025-07-28T05:52:40.442459", "container": "observer", "event_type": "monitoring_stopped", "message": "Network monitoring stopped", "data": {}}
