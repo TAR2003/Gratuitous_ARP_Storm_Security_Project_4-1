@@ -8,3 +8,7 @@
 {"timestamp": "2025-07-28T00:44:37.897287", "container": "attacker", "event_type": "poisoning_complete", "message": "Targeted poisoning completed", "data": {"packets_sent": 2288}}
 {"timestamp": "2025-07-28T02:08:31.491103", "container": "attacker", "event_type": "attack_start", "message": "Basic storm attack initiated", "data": {"target_subnet": "10.0.1", "duration": 60, "threads": 4, "rate": 100}}
 {"timestamp": "2025-07-28T02:09:34.776392", "container": "attacker", "event_type": "attack_complete", "message": "Basic storm attack completed", "data": {"packets_sent": 22368}}
+{"timestamp": "2025-07-28T04:00:28.342053", "container": "attacker", "event_type": "container_start", "message": "Attacker container started", "data": {"network_config": {"attacker_ip": "10.0.1.10", "victim_ip": "10.0.1.20", "observer_ip": "10.0.1.30", "subnet": "10.0.1"}}}
+{"timestamp": "2025-07-28T04:00:41.122523", "container": "attacker", "event_type": "connectivity_check", "message": "Network connectivity verified", "data": {"Victim": "10.0.1.20", "Observer": "10.0.1.30", "Gateway": "10.0.1.1"}}
+{"timestamp": "2025-07-28T04:01:32.550041", "container": "attacker", "event_type": "attack_start", "message": "Basic storm attack initiated", "data": {"target_subnet": "10.0.1", "duration": 60, "threads": 4, "rate": 100}}
+{"timestamp": "2025-07-28T04:02:36.052885", "container": "attacker", "event_type": "attack_complete", "message": "Basic storm attack completed", "data": {"packets_sent": 22228}}
