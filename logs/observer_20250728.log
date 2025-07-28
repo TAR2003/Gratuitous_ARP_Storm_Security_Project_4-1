@@ -1,5 +1,0 @@
-{"timestamp": "2025-07-28T00:24:51.379752", "container": "observer", "event_type": "container_start", "message": "Observer container started", "data": {"observer_ip": "10.0.1.30", "monitoring_targets": ["10.0.1.10", "10.0.1.20"]}}
-{"timestamp": "2025-07-28T00:24:52.011571", "container": "observer", "event_type": "capabilities_check", "message": "Monitoring capabilities assessed", "data": {"Raw Socket Access": true, "Packet Capture": true, "Network Interface": true, "Privileged Mode": true}}
-{"timestamp": "2025-07-28T00:24:52.015992", "container": "observer", "event_type": "monitoring_started", "message": "Network monitoring started", "data": {}}
-{"timestamp": "2025-07-28T00:38:55.564172", "container": "observer", "event_type": "attack_detected", "message": "ARP storm attack detected", "data": {"packet_rate": 196, "detection_time": "2025-07-28T00:38:55.550835"}}
-{"timestamp": "2025-07-28T00:38:55.825143", "container": "observer", "event_type": "attack_report_generated", "message": "Report saved to /app/results/attack_report_20250728_003855.json", "data": {}}
