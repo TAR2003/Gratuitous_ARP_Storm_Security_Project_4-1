@@ -133,16 +133,17 @@ class DockerAttacker:
         connectivity_table.add_column("Status", style="green")
         
         for name, ip in targets.items():
+            # for each target of the targets
             try:
                 result = subprocess.run(['ping', '-c', '1', '-W', '2', ip], 
-                                      capture_output=True, text=True)
+                                      capture_output=True, text=True) #sends one packet 2 second timeout captures output for analyzing
                 status = "✅ Reachable" if result.returncode == 0 else "❌ Unreachable"
                 style = "green" if result.returncode == 0 else "red"
             except Exception as e:
                 status = f"❌ Error: {e}"
                 style = "red"
             
-            connectivity_table.add_row(name, ip, f"[{style}]{status}[/{style}]")
+            connectivity_table.add_row(name, ip, f"[{style}]{status}[/{style}]") # add the information in the table
         
         console.print(connectivity_table)
         self.log_event("connectivity_check", "Network connectivity verified", targets)

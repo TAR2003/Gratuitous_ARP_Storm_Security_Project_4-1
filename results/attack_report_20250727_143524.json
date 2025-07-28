@@ -1,0 +1,5713 @@
+{
+  "detection_timestamp": "2025-07-27T14:35:24.602348",
+  "observer_ip": "10.0.1.30",
+  "suspected_attacker": "10.0.1.10",
+  "victim_ip": "10.0.1.20",
+  "attack_type": "ARP Storm",
+  "severity": "HIGH",
+  "analyzer_stats": {
+    "total_packets": 872,
+    "gratuitous_arp": 866,
+    "unique_senders": 869,
+    "suspicious_activities": [
+      {
+        "timestamp": 1753626920.0449364,
+        "description": "High gratuitous ARP ratio: 71.43%"
+      },
+      {
+        "timestamp": 1753626920.0544817,
+        "description": "High gratuitous ARP ratio: 75.00%"
+      },
+      {
+        "timestamp": 1753626920.0550451,
+        "description": "High gratuitous ARP ratio: 77.78%"
+      },
+      {
+        "timestamp": 1753626920.0655491,
+        "description": "High gratuitous ARP ratio: 80.00%"
+      },
+      {
+        "timestamp": 1753626920.0656693,
+        "description": "High gratuitous ARP ratio: 81.82%"
+      },
+      {
+        "timestamp": 1753626920.075724,
+        "description": "High gratuitous ARP ratio: 83.33%"
+      },
+      {
+        "timestamp": 1753626920.075839,
+        "description": "High gratuitous ARP ratio: 84.62%"
+      },
+      {
+        "timestamp": 1753626920.075885,
+        "description": "High gratuitous ARP ratio: 85.71%"
+      },
+      {
+        "timestamp": 1753626920.0852861,
+        "description": "High gratuitous ARP ratio: 86.67%"
+      },
+      {
+        "timestamp": 1753626920.0860288,
+        "description": "High gratuitous ARP ratio: 87.50%"
+      },
+      {
+        "timestamp": 1753626920.08613,
+        "description": "High gratuitous ARP ratio: 88.24%"
+      },
+      {
+        "timestamp": 1753626920.095757,
+        "description": "High gratuitous ARP ratio: 88.89%"
+      },
+      {
+        "timestamp": 1753626920.1060467,
+        "description": "High gratuitous ARP ratio: 89.47%"
+      },
+      {
+        "timestamp": 1753626920.1067095,
+        "description": "High gratuitous ARP ratio: 90.00%"
+      },
+      {
+        "timestamp": 1753626920.1067743,
+        "description": "High number of unique senders: 21 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.1067743,
+        "description": "High gratuitous ARP ratio: 90.48%"
+      },
+      {
+        "timestamp": 1753626920.1163788,
+        "description": "High number of unique senders: 22 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.1163788,
+        "description": "High gratuitous ARP ratio: 90.91%"
+      },
+      {
+        "timestamp": 1753626920.1169496,
+        "description": "High number of unique senders: 23 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.1169496,
+        "description": "High gratuitous ARP ratio: 91.30%"
+      },
+      {
+        "timestamp": 1753626920.1265974,
+        "description": "High number of unique senders: 24 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.1265974,
+        "description": "High gratuitous ARP ratio: 91.67%"
+      },
+      {
+        "timestamp": 1753626920.127211,
+        "description": "High number of unique senders: 25 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.127211,
+        "description": "High gratuitous ARP ratio: 92.00%"
+      },
+      {
+        "timestamp": 1753626920.1370935,
+        "description": "High number of unique senders: 26 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.1370935,
+        "description": "High gratuitous ARP ratio: 92.31%"
+      },
+      {
+        "timestamp": 1753626920.1373417,
+        "description": "High number of unique senders: 27 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.1373417,
+        "description": "High gratuitous ARP ratio: 92.59%"
+      },
+      {
+        "timestamp": 1753626920.137392,
+        "description": "High number of unique senders: 28 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.137392,
+        "description": "High gratuitous ARP ratio: 92.86%"
+      },
+      {
+        "timestamp": 1753626920.1477659,
+        "description": "High number of unique senders: 29 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.1477659,
+        "description": "High gratuitous ARP ratio: 93.10%"
+      },
+      {
+        "timestamp": 1753626920.1576216,
+        "description": "High number of unique senders: 30 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.1576216,
+        "description": "High gratuitous ARP ratio: 93.33%"
+      },
+      {
+        "timestamp": 1753626920.1577678,
+        "description": "High number of unique senders: 31 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.1577678,
+        "description": "High gratuitous ARP ratio: 93.55%"
+      },
+      {
+        "timestamp": 1753626920.1579146,
+        "description": "High number of unique senders: 32 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.1579146,
+        "description": "High gratuitous ARP ratio: 93.75%"
+      },
+      {
+        "timestamp": 1753626920.1579921,
+        "description": "High number of unique senders: 33 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.1579921,
+        "description": "High gratuitous ARP ratio: 93.94%"
+      },
+      {
+        "timestamp": 1753626920.1682353,
+        "description": "High number of unique senders: 34 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.1682353,
+        "description": "High gratuitous ARP ratio: 94.12%"
+      },
+      {
+        "timestamp": 1753626920.1784174,
+        "description": "High number of unique senders: 35 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.1784174,
+        "description": "High gratuitous ARP ratio: 94.29%"
+      },
+      {
+        "timestamp": 1753626920.188764,
+        "description": "High number of unique senders: 36 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.188764,
+        "description": "High gratuitous ARP ratio: 94.44%"
+      },
+      {
+        "timestamp": 1753626920.1988847,
+        "description": "High number of unique senders: 37 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.1988847,
+        "description": "High gratuitous ARP ratio: 94.59%"
+      },
+      {
+        "timestamp": 1753626920.199022,
+        "description": "High number of unique senders: 38 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.199022,
+        "description": "High gratuitous ARP ratio: 94.74%"
+      },
+      {
+        "timestamp": 1753626920.1990728,
+        "description": "High number of unique senders: 39 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.1990728,
+        "description": "High gratuitous ARP ratio: 94.87%"
+      },
+      {
+        "timestamp": 1753626920.2092113,
+        "description": "High number of unique senders: 40 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.2092113,
+        "description": "High gratuitous ARP ratio: 95.00%"
+      },
+      {
+        "timestamp": 1753626920.2093637,
+        "description": "High number of unique senders: 41 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.2093637,
+        "description": "High gratuitous ARP ratio: 95.12%"
+      },
+      {
+        "timestamp": 1753626920.2197378,
+        "description": "High number of unique senders: 42 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.2197378,
+        "description": "High gratuitous ARP ratio: 95.24%"
+      },
+      {
+        "timestamp": 1753626920.2198756,
+        "description": "High number of unique senders: 43 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.2198756,
+        "description": "High gratuitous ARP ratio: 95.35%"
+      },
+      {
+        "timestamp": 1753626920.2299197,
+        "description": "High number of unique senders: 44 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.2299197,
+        "description": "High gratuitous ARP ratio: 95.45%"
+      },
+      {
+        "timestamp": 1753626920.2300901,
+        "description": "High number of unique senders: 45 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.2300901,
+        "description": "High gratuitous ARP ratio: 95.56%"
+      },
+      {
+        "timestamp": 1753626920.2301507,
+        "description": "High number of unique senders: 46 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.2301507,
+        "description": "High gratuitous ARP ratio: 95.65%"
+      },
+      {
+        "timestamp": 1753626920.2403796,
+        "description": "High number of unique senders: 47 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.2403796,
+        "description": "High gratuitous ARP ratio: 95.74%"
+      },
+      {
+        "timestamp": 1753626920.2505424,
+        "description": "High number of unique senders: 48 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.2505424,
+        "description": "High gratuitous ARP ratio: 95.83%"
+      },
+      {
+        "timestamp": 1753626920.250888,
+        "description": "High number of unique senders: 49 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.250888,
+        "description": "High gratuitous ARP ratio: 95.92%"
+      },
+      {
+        "timestamp": 1753626920.2609837,
+        "description": "High number of unique senders: 50 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.2609837,
+        "description": "High gratuitous ARP ratio: 96.00%"
+      },
+      {
+        "timestamp": 1753626920.2611277,
+        "description": "High number of unique senders: 51 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.2611277,
+        "description": "High gratuitous ARP ratio: 96.08%"
+      },
+      {
+        "timestamp": 1753626920.27117,
+        "description": "High number of unique senders: 52 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.27117,
+        "description": "High gratuitous ARP ratio: 96.15%"
+      },
+      {
+        "timestamp": 1753626920.2713284,
+        "description": "High ARP packet rate: 51 packets/second"
+      },
+      {
+        "timestamp": 1753626920.2713284,
+        "description": "High number of unique senders: 53 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.2713284,
+        "description": "High gratuitous ARP ratio: 96.23%"
+      },
+      {
+        "timestamp": 1753626920.281781,
+        "description": "High ARP packet rate: 52 packets/second"
+      },
+      {
+        "timestamp": 1753626920.281781,
+        "description": "High number of unique senders: 54 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.281781,
+        "description": "High gratuitous ARP ratio: 96.30%"
+      },
+      {
+        "timestamp": 1753626920.2819355,
+        "description": "High ARP packet rate: 53 packets/second"
+      },
+      {
+        "timestamp": 1753626920.2819355,
+        "description": "High number of unique senders: 55 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.2819355,
+        "description": "High gratuitous ARP ratio: 96.36%"
+      },
+      {
+        "timestamp": 1753626920.291936,
+        "description": "High ARP packet rate: 54 packets/second"
+      },
+      {
+        "timestamp": 1753626920.291936,
+        "description": "High number of unique senders: 56 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.291936,
+        "description": "High gratuitous ARP ratio: 96.43%"
+      },
+      {
+        "timestamp": 1753626920.292096,
+        "description": "High ARP packet rate: 55 packets/second"
+      },
+      {
+        "timestamp": 1753626920.292096,
+        "description": "High number of unique senders: 57 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.292096,
+        "description": "High gratuitous ARP ratio: 96.49%"
+      },
+      {
+        "timestamp": 1753626920.302249,
+        "description": "High ARP packet rate: 56 packets/second"
+      },
+      {
+        "timestamp": 1753626920.302249,
+        "description": "High number of unique senders: 58 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.302249,
+        "description": "High gratuitous ARP ratio: 96.55%"
+      },
+      {
+        "timestamp": 1753626920.3024354,
+        "description": "High ARP packet rate: 57 packets/second"
+      },
+      {
+        "timestamp": 1753626920.3024354,
+        "description": "High number of unique senders: 59 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.3024354,
+        "description": "High gratuitous ARP ratio: 96.61%"
+      },
+      {
+        "timestamp": 1753626920.3025174,
+        "description": "High ARP packet rate: 58 packets/second"
+      },
+      {
+        "timestamp": 1753626920.3025174,
+        "description": "High number of unique senders: 60 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.3025174,
+        "description": "High gratuitous ARP ratio: 96.67%"
+      },
+      {
+        "timestamp": 1753626920.3125591,
+        "description": "High ARP packet rate: 59 packets/second"
+      },
+      {
+        "timestamp": 1753626920.3125591,
+        "description": "High number of unique senders: 61 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.3125591,
+        "description": "High gratuitous ARP ratio: 96.72%"
+      },
+      {
+        "timestamp": 1753626920.3127215,
+        "description": "High ARP packet rate: 60 packets/second"
+      },
+      {
+        "timestamp": 1753626920.3127215,
+        "description": "High number of unique senders: 62 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.3127215,
+        "description": "High gratuitous ARP ratio: 96.77%"
+      },
+      {
+        "timestamp": 1753626920.3128154,
+        "description": "High ARP packet rate: 61 packets/second"
+      },
+      {
+        "timestamp": 1753626920.3128154,
+        "description": "High number of unique senders: 63 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.3128154,
+        "description": "High gratuitous ARP ratio: 96.83%"
+      },
+      {
+        "timestamp": 1753626920.3228946,
+        "description": "High ARP packet rate: 62 packets/second"
+      },
+      {
+        "timestamp": 1753626920.3228946,
+        "description": "High number of unique senders: 64 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.3228946,
+        "description": "High gratuitous ARP ratio: 96.88%"
+      },
+      {
+        "timestamp": 1753626920.323124,
+        "description": "High ARP packet rate: 63 packets/second"
+      },
+      {
+        "timestamp": 1753626920.323124,
+        "description": "High number of unique senders: 65 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.323124,
+        "description": "High gratuitous ARP ratio: 96.92%"
+      },
+      {
+        "timestamp": 1753626920.3232198,
+        "description": "High ARP packet rate: 64 packets/second"
+      },
+      {
+        "timestamp": 1753626920.3232198,
+        "description": "High number of unique senders: 66 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.3232198,
+        "description": "High gratuitous ARP ratio: 96.97%"
+      },
+      {
+        "timestamp": 1753626920.3334608,
+        "description": "High ARP packet rate: 65 packets/second"
+      },
+      {
+        "timestamp": 1753626920.3334608,
+        "description": "High number of unique senders: 67 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.3334608,
+        "description": "High gratuitous ARP ratio: 97.01%"
+      },
+      {
+        "timestamp": 1753626920.333657,
+        "description": "High ARP packet rate: 66 packets/second"
+      },
+      {
+        "timestamp": 1753626920.333657,
+        "description": "High number of unique senders: 68 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.333657,
+        "description": "High gratuitous ARP ratio: 97.06%"
+      },
+      {
+        "timestamp": 1753626920.3437085,
+        "description": "High ARP packet rate: 67 packets/second"
+      },
+      {
+        "timestamp": 1753626920.3437085,
+        "description": "High number of unique senders: 69 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.3437085,
+        "description": "High gratuitous ARP ratio: 97.10%"
+      },
+      {
+        "timestamp": 1753626920.353629,
+        "description": "High ARP packet rate: 68 packets/second"
+      },
+      {
+        "timestamp": 1753626920.353629,
+        "description": "High number of unique senders: 70 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.353629,
+        "description": "High gratuitous ARP ratio: 97.14%"
+      },
+      {
+        "timestamp": 1753626920.353878,
+        "description": "High ARP packet rate: 69 packets/second"
+      },
+      {
+        "timestamp": 1753626920.353878,
+        "description": "High number of unique senders: 71 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.353878,
+        "description": "High gratuitous ARP ratio: 97.18%"
+      },
+      {
+        "timestamp": 1753626920.3539782,
+        "description": "High ARP packet rate: 70 packets/second"
+      },
+      {
+        "timestamp": 1753626920.3539782,
+        "description": "High number of unique senders: 72 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.3539782,
+        "description": "High gratuitous ARP ratio: 97.22%"
+      },
+      {
+        "timestamp": 1753626920.354064,
+        "description": "High ARP packet rate: 71 packets/second"
+      },
+      {
+        "timestamp": 1753626920.354064,
+        "description": "High number of unique senders: 73 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.354064,
+        "description": "High gratuitous ARP ratio: 97.26%"
+      },
+      {
+        "timestamp": 1753626920.3639524,
+        "description": "High ARP packet rate: 72 packets/second"
+      },
+      {
+        "timestamp": 1753626920.3639524,
+        "description": "High number of unique senders: 74 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.3639524,
+        "description": "High gratuitous ARP ratio: 97.30%"
+      },
+      {
+        "timestamp": 1753626920.3641582,
+        "description": "High ARP packet rate: 73 packets/second"
+      },
+      {
+        "timestamp": 1753626920.3641582,
+        "description": "High number of unique senders: 75 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.3641582,
+        "description": "High gratuitous ARP ratio: 97.33%"
+      },
+      {
+        "timestamp": 1753626920.3642519,
+        "description": "High ARP packet rate: 74 packets/second"
+      },
+      {
+        "timestamp": 1753626920.3642519,
+        "description": "High number of unique senders: 76 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.3642519,
+        "description": "High gratuitous ARP ratio: 97.37%"
+      },
+      {
+        "timestamp": 1753626920.364349,
+        "description": "High ARP packet rate: 75 packets/second"
+      },
+      {
+        "timestamp": 1753626920.364349,
+        "description": "High number of unique senders: 77 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.364349,
+        "description": "High gratuitous ARP ratio: 97.40%"
+      },
+      {
+        "timestamp": 1753626920.3742576,
+        "description": "High ARP packet rate: 76 packets/second"
+      },
+      {
+        "timestamp": 1753626920.3742576,
+        "description": "High number of unique senders: 78 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.3742576,
+        "description": "High gratuitous ARP ratio: 97.44%"
+      },
+      {
+        "timestamp": 1753626920.3744886,
+        "description": "High ARP packet rate: 77 packets/second"
+      },
+      {
+        "timestamp": 1753626920.3744886,
+        "description": "High number of unique senders: 79 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.3744886,
+        "description": "High gratuitous ARP ratio: 97.47%"
+      },
+      {
+        "timestamp": 1753626920.3746045,
+        "description": "High ARP packet rate: 78 packets/second"
+      },
+      {
+        "timestamp": 1753626920.3746045,
+        "description": "High number of unique senders: 80 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.3746045,
+        "description": "High gratuitous ARP ratio: 97.50%"
+      },
+      {
+        "timestamp": 1753626920.374694,
+        "description": "High ARP packet rate: 79 packets/second"
+      },
+      {
+        "timestamp": 1753626920.374694,
+        "description": "High number of unique senders: 81 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.374694,
+        "description": "High gratuitous ARP ratio: 97.53%"
+      },
+      {
+        "timestamp": 1753626920.3845482,
+        "description": "High ARP packet rate: 80 packets/second"
+      },
+      {
+        "timestamp": 1753626920.3845482,
+        "description": "High number of unique senders: 82 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.3845482,
+        "description": "High gratuitous ARP ratio: 97.56%"
+      },
+      {
+        "timestamp": 1753626920.3848262,
+        "description": "High ARP packet rate: 81 packets/second"
+      },
+      {
+        "timestamp": 1753626920.3848262,
+        "description": "High number of unique senders: 83 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.3848262,
+        "description": "High gratuitous ARP ratio: 97.59%"
+      },
+      {
+        "timestamp": 1753626920.3849807,
+        "description": "High ARP packet rate: 82 packets/second"
+      },
+      {
+        "timestamp": 1753626920.3849807,
+        "description": "High number of unique senders: 84 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.3849807,
+        "description": "High gratuitous ARP ratio: 97.62%"
+      },
+      {
+        "timestamp": 1753626920.3851924,
+        "description": "High ARP packet rate: 83 packets/second"
+      },
+      {
+        "timestamp": 1753626920.3851924,
+        "description": "High number of unique senders: 85 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.3851924,
+        "description": "High gratuitous ARP ratio: 97.65%"
+      },
+      {
+        "timestamp": 1753626920.3950245,
+        "description": "High ARP packet rate: 84 packets/second"
+      },
+      {
+        "timestamp": 1753626920.3950245,
+        "description": "High number of unique senders: 86 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.3950245,
+        "description": "High gratuitous ARP ratio: 97.67%"
+      },
+      {
+        "timestamp": 1753626920.395419,
+        "description": "High ARP packet rate: 85 packets/second"
+      },
+      {
+        "timestamp": 1753626920.395419,
+        "description": "High number of unique senders: 87 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.395419,
+        "description": "High gratuitous ARP ratio: 97.70%"
+      },
+      {
+        "timestamp": 1753626920.4052942,
+        "description": "High ARP packet rate: 86 packets/second"
+      },
+      {
+        "timestamp": 1753626920.4052942,
+        "description": "High number of unique senders: 88 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.4052942,
+        "description": "High gratuitous ARP ratio: 97.73%"
+      },
+      {
+        "timestamp": 1753626920.4055104,
+        "description": "High ARP packet rate: 87 packets/second"
+      },
+      {
+        "timestamp": 1753626920.4055104,
+        "description": "High number of unique senders: 89 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.4055104,
+        "description": "High gratuitous ARP ratio: 97.75%"
+      },
+      {
+        "timestamp": 1753626920.4056344,
+        "description": "High ARP packet rate: 88 packets/second"
+      },
+      {
+        "timestamp": 1753626920.4056344,
+        "description": "High number of unique senders: 90 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.4056344,
+        "description": "High gratuitous ARP ratio: 97.78%"
+      },
+      {
+        "timestamp": 1753626920.4155586,
+        "description": "High ARP packet rate: 89 packets/second"
+      },
+      {
+        "timestamp": 1753626920.4155586,
+        "description": "High number of unique senders: 91 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.4155586,
+        "description": "High gratuitous ARP ratio: 97.80%"
+      },
+      {
+        "timestamp": 1753626920.4157562,
+        "description": "High ARP packet rate: 90 packets/second"
+      },
+      {
+        "timestamp": 1753626920.4157562,
+        "description": "High number of unique senders: 92 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.4157562,
+        "description": "High gratuitous ARP ratio: 97.83%"
+      },
+      {
+        "timestamp": 1753626920.4257956,
+        "description": "High ARP packet rate: 91 packets/second"
+      },
+      {
+        "timestamp": 1753626920.4257956,
+        "description": "High number of unique senders: 93 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.4257956,
+        "description": "High gratuitous ARP ratio: 97.85%"
+      },
+      {
+        "timestamp": 1753626920.42612,
+        "description": "High ARP packet rate: 92 packets/second"
+      },
+      {
+        "timestamp": 1753626920.42612,
+        "description": "High number of unique senders: 94 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.42612,
+        "description": "High gratuitous ARP ratio: 97.87%"
+      },
+      {
+        "timestamp": 1753626920.4360769,
+        "description": "High ARP packet rate: 93 packets/second"
+      },
+      {
+        "timestamp": 1753626920.4360769,
+        "description": "High number of unique senders: 95 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.4360769,
+        "description": "High gratuitous ARP ratio: 97.89%"
+      },
+      {
+        "timestamp": 1753626920.436298,
+        "description": "High ARP packet rate: 94 packets/second"
+      },
+      {
+        "timestamp": 1753626920.436298,
+        "description": "High number of unique senders: 96 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.436298,
+        "description": "High gratuitous ARP ratio: 97.92%"
+      },
+      {
+        "timestamp": 1753626920.4364247,
+        "description": "High ARP packet rate: 95 packets/second"
+      },
+      {
+        "timestamp": 1753626920.4364247,
+        "description": "High number of unique senders: 97 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.4364247,
+        "description": "High gratuitous ARP ratio: 97.94%"
+      },
+      {
+        "timestamp": 1753626920.4570398,
+        "description": "High ARP packet rate: 96 packets/second"
+      },
+      {
+        "timestamp": 1753626920.4570398,
+        "description": "High number of unique senders: 98 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.4570398,
+        "description": "High gratuitous ARP ratio: 97.96%"
+      },
+      {
+        "timestamp": 1753626920.4672258,
+        "description": "High ARP packet rate: 97 packets/second"
+      },
+      {
+        "timestamp": 1753626920.4672258,
+        "description": "High number of unique senders: 99 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.4672258,
+        "description": "High gratuitous ARP ratio: 97.98%"
+      },
+      {
+        "timestamp": 1753626920.4674602,
+        "description": "High ARP packet rate: 98 packets/second"
+      },
+      {
+        "timestamp": 1753626920.4674602,
+        "description": "High number of unique senders: 100 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.4674602,
+        "description": "High gratuitous ARP ratio: 98.00%"
+      },
+      {
+        "timestamp": 1753626920.477651,
+        "description": "High ARP packet rate: 99 packets/second"
+      },
+      {
+        "timestamp": 1753626920.477651,
+        "description": "High number of unique senders: 101 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.477651,
+        "description": "High gratuitous ARP ratio: 98.02%"
+      },
+      {
+        "timestamp": 1753626920.477838,
+        "description": "High ARP packet rate: 100 packets/second"
+      },
+      {
+        "timestamp": 1753626920.477838,
+        "description": "High number of unique senders: 102 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.477838,
+        "description": "High gratuitous ARP ratio: 98.04%"
+      },
+      {
+        "timestamp": 1753626920.4879515,
+        "description": "High ARP packet rate: 101 packets/second"
+      },
+      {
+        "timestamp": 1753626920.4879515,
+        "description": "High number of unique senders: 103 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.4879515,
+        "description": "High gratuitous ARP ratio: 98.06%"
+      },
+      {
+        "timestamp": 1753626920.4881723,
+        "description": "High ARP packet rate: 102 packets/second"
+      },
+      {
+        "timestamp": 1753626920.4881723,
+        "description": "High number of unique senders: 104 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.4881723,
+        "description": "High gratuitous ARP ratio: 98.08%"
+      },
+      {
+        "timestamp": 1753626920.4882874,
+        "description": "High ARP packet rate: 103 packets/second"
+      },
+      {
+        "timestamp": 1753626920.4882874,
+        "description": "High number of unique senders: 105 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.4882874,
+        "description": "High gratuitous ARP ratio: 98.10%"
+      },
+      {
+        "timestamp": 1753626920.4982007,
+        "description": "High ARP packet rate: 104 packets/second"
+      },
+      {
+        "timestamp": 1753626920.4982007,
+        "description": "High number of unique senders: 106 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.4982007,
+        "description": "High gratuitous ARP ratio: 98.11%"
+      },
+      {
+        "timestamp": 1753626920.4984386,
+        "description": "High ARP packet rate: 105 packets/second"
+      },
+      {
+        "timestamp": 1753626920.4984386,
+        "description": "High number of unique senders: 107 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.4984386,
+        "description": "High gratuitous ARP ratio: 98.13%"
+      },
+      {
+        "timestamp": 1753626920.4984386,
+        "description": "IP 10.0.1.63 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626920.5087283,
+        "description": "High ARP packet rate: 106 packets/second"
+      },
+      {
+        "timestamp": 1753626920.5087283,
+        "description": "High number of unique senders: 108 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.5087283,
+        "description": "High gratuitous ARP ratio: 98.15%"
+      },
+      {
+        "timestamp": 1753626920.5191517,
+        "description": "High ARP packet rate: 107 packets/second"
+      },
+      {
+        "timestamp": 1753626920.5191517,
+        "description": "High number of unique senders: 109 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.5191517,
+        "description": "High gratuitous ARP ratio: 98.17%"
+      },
+      {
+        "timestamp": 1753626920.5193963,
+        "description": "High ARP packet rate: 108 packets/second"
+      },
+      {
+        "timestamp": 1753626920.5193963,
+        "description": "High number of unique senders: 110 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.5193963,
+        "description": "High gratuitous ARP ratio: 98.18%"
+      },
+      {
+        "timestamp": 1753626920.529491,
+        "description": "High ARP packet rate: 109 packets/second"
+      },
+      {
+        "timestamp": 1753626920.529491,
+        "description": "High number of unique senders: 111 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.529491,
+        "description": "High gratuitous ARP ratio: 98.20%"
+      },
+      {
+        "timestamp": 1753626920.539735,
+        "description": "High ARP packet rate: 110 packets/second"
+      },
+      {
+        "timestamp": 1753626920.539735,
+        "description": "High number of unique senders: 112 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.539735,
+        "description": "High gratuitous ARP ratio: 98.21%"
+      },
+      {
+        "timestamp": 1753626920.5500443,
+        "description": "High ARP packet rate: 111 packets/second"
+      },
+      {
+        "timestamp": 1753626920.5500443,
+        "description": "High number of unique senders: 113 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.5500443,
+        "description": "High gratuitous ARP ratio: 98.23%"
+      },
+      {
+        "timestamp": 1753626920.5606506,
+        "description": "High ARP packet rate: 112 packets/second"
+      },
+      {
+        "timestamp": 1753626920.5606506,
+        "description": "High number of unique senders: 114 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.5606506,
+        "description": "High gratuitous ARP ratio: 98.25%"
+      },
+      {
+        "timestamp": 1753626920.5611115,
+        "description": "High ARP packet rate: 113 packets/second"
+      },
+      {
+        "timestamp": 1753626920.5611115,
+        "description": "High number of unique senders: 115 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.5611115,
+        "description": "High gratuitous ARP ratio: 98.26%"
+      },
+      {
+        "timestamp": 1753626920.5710342,
+        "description": "High ARP packet rate: 114 packets/second"
+      },
+      {
+        "timestamp": 1753626920.5710342,
+        "description": "High number of unique senders: 116 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.5710342,
+        "description": "High gratuitous ARP ratio: 98.28%"
+      },
+      {
+        "timestamp": 1753626920.581563,
+        "description": "High ARP packet rate: 115 packets/second"
+      },
+      {
+        "timestamp": 1753626920.581563,
+        "description": "High number of unique senders: 117 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.581563,
+        "description": "High gratuitous ARP ratio: 98.29%"
+      },
+      {
+        "timestamp": 1753626920.5920808,
+        "description": "High ARP packet rate: 116 packets/second"
+      },
+      {
+        "timestamp": 1753626920.5920808,
+        "description": "High number of unique senders: 118 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.5920808,
+        "description": "High gratuitous ARP ratio: 98.31%"
+      },
+      {
+        "timestamp": 1753626920.6024764,
+        "description": "High ARP packet rate: 117 packets/second"
+      },
+      {
+        "timestamp": 1753626920.6024764,
+        "description": "High number of unique senders: 119 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.6024764,
+        "description": "High gratuitous ARP ratio: 98.32%"
+      },
+      {
+        "timestamp": 1753626920.6028078,
+        "description": "High ARP packet rate: 118 packets/second"
+      },
+      {
+        "timestamp": 1753626920.6028078,
+        "description": "High number of unique senders: 120 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.6028078,
+        "description": "High gratuitous ARP ratio: 98.33%"
+      },
+      {
+        "timestamp": 1753626920.6126897,
+        "description": "High ARP packet rate: 119 packets/second"
+      },
+      {
+        "timestamp": 1753626920.6126897,
+        "description": "High number of unique senders: 121 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.6126897,
+        "description": "High gratuitous ARP ratio: 98.35%"
+      },
+      {
+        "timestamp": 1753626920.6129253,
+        "description": "High ARP packet rate: 120 packets/second"
+      },
+      {
+        "timestamp": 1753626920.6129253,
+        "description": "High number of unique senders: 122 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.6129253,
+        "description": "High gratuitous ARP ratio: 98.36%"
+      },
+      {
+        "timestamp": 1753626920.6334505,
+        "description": "High ARP packet rate: 121 packets/second"
+      },
+      {
+        "timestamp": 1753626920.6334505,
+        "description": "High number of unique senders: 123 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.6334505,
+        "description": "High gratuitous ARP ratio: 98.37%"
+      },
+      {
+        "timestamp": 1753626920.6337261,
+        "description": "High ARP packet rate: 122 packets/second"
+      },
+      {
+        "timestamp": 1753626920.6337261,
+        "description": "High number of unique senders: 124 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.6337261,
+        "description": "High gratuitous ARP ratio: 98.39%"
+      },
+      {
+        "timestamp": 1753626920.654462,
+        "description": "High ARP packet rate: 123 packets/second"
+      },
+      {
+        "timestamp": 1753626920.654462,
+        "description": "High number of unique senders: 125 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.654462,
+        "description": "High gratuitous ARP ratio: 98.40%"
+      },
+      {
+        "timestamp": 1753626920.6547737,
+        "description": "High ARP packet rate: 124 packets/second"
+      },
+      {
+        "timestamp": 1753626920.6547737,
+        "description": "High number of unique senders: 126 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.6547737,
+        "description": "High gratuitous ARP ratio: 98.41%"
+      },
+      {
+        "timestamp": 1753626920.6649525,
+        "description": "High ARP packet rate: 125 packets/second"
+      },
+      {
+        "timestamp": 1753626920.6649525,
+        "description": "High number of unique senders: 127 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.6649525,
+        "description": "High gratuitous ARP ratio: 98.43%"
+      },
+      {
+        "timestamp": 1753626920.6752863,
+        "description": "High ARP packet rate: 126 packets/second"
+      },
+      {
+        "timestamp": 1753626920.6752863,
+        "description": "High number of unique senders: 128 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.6752863,
+        "description": "High gratuitous ARP ratio: 98.44%"
+      },
+      {
+        "timestamp": 1753626920.6756055,
+        "description": "High ARP packet rate: 127 packets/second"
+      },
+      {
+        "timestamp": 1753626920.6756055,
+        "description": "High number of unique senders: 129 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.6756055,
+        "description": "High gratuitous ARP ratio: 98.45%"
+      },
+      {
+        "timestamp": 1753626920.6856282,
+        "description": "High ARP packet rate: 128 packets/second"
+      },
+      {
+        "timestamp": 1753626920.6856282,
+        "description": "High number of unique senders: 130 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.6856282,
+        "description": "High gratuitous ARP ratio: 98.46%"
+      },
+      {
+        "timestamp": 1753626920.685938,
+        "description": "High ARP packet rate: 129 packets/second"
+      },
+      {
+        "timestamp": 1753626920.685938,
+        "description": "High number of unique senders: 131 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.685938,
+        "description": "High gratuitous ARP ratio: 98.47%"
+      },
+      {
+        "timestamp": 1753626920.706566,
+        "description": "High ARP packet rate: 130 packets/second"
+      },
+      {
+        "timestamp": 1753626920.706566,
+        "description": "High number of unique senders: 132 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.706566,
+        "description": "High gratuitous ARP ratio: 98.48%"
+      },
+      {
+        "timestamp": 1753626920.7167065,
+        "description": "High ARP packet rate: 131 packets/second"
+      },
+      {
+        "timestamp": 1753626920.7167065,
+        "description": "High number of unique senders: 133 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.7167065,
+        "description": "High gratuitous ARP ratio: 98.50%"
+      },
+      {
+        "timestamp": 1753626920.7170773,
+        "description": "High ARP packet rate: 132 packets/second"
+      },
+      {
+        "timestamp": 1753626920.7170773,
+        "description": "High number of unique senders: 134 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.7170773,
+        "description": "High gratuitous ARP ratio: 98.51%"
+      },
+      {
+        "timestamp": 1753626920.7271175,
+        "description": "High ARP packet rate: 133 packets/second"
+      },
+      {
+        "timestamp": 1753626920.7271175,
+        "description": "High number of unique senders: 135 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.7271175,
+        "description": "High gratuitous ARP ratio: 98.52%"
+      },
+      {
+        "timestamp": 1753626920.7274091,
+        "description": "High ARP packet rate: 134 packets/second"
+      },
+      {
+        "timestamp": 1753626920.7274091,
+        "description": "High number of unique senders: 136 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.7274091,
+        "description": "High gratuitous ARP ratio: 98.53%"
+      },
+      {
+        "timestamp": 1753626920.727569,
+        "description": "High ARP packet rate: 135 packets/second"
+      },
+      {
+        "timestamp": 1753626920.727569,
+        "description": "High number of unique senders: 137 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.727569,
+        "description": "High gratuitous ARP ratio: 98.54%"
+      },
+      {
+        "timestamp": 1753626920.7374966,
+        "description": "High ARP packet rate: 136 packets/second"
+      },
+      {
+        "timestamp": 1753626920.7374966,
+        "description": "High number of unique senders: 138 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.7374966,
+        "description": "High gratuitous ARP ratio: 98.55%"
+      },
+      {
+        "timestamp": 1753626920.7481794,
+        "description": "High ARP packet rate: 137 packets/second"
+      },
+      {
+        "timestamp": 1753626920.7481794,
+        "description": "High number of unique senders: 139 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.7481794,
+        "description": "High gratuitous ARP ratio: 98.56%"
+      },
+      {
+        "timestamp": 1753626920.7581275,
+        "description": "High ARP packet rate: 138 packets/second"
+      },
+      {
+        "timestamp": 1753626920.7581275,
+        "description": "High number of unique senders: 140 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.7581275,
+        "description": "High gratuitous ARP ratio: 98.57%"
+      },
+      {
+        "timestamp": 1753626920.758437,
+        "description": "High ARP packet rate: 139 packets/second"
+      },
+      {
+        "timestamp": 1753626920.758437,
+        "description": "High number of unique senders: 141 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.758437,
+        "description": "High gratuitous ARP ratio: 98.58%"
+      },
+      {
+        "timestamp": 1753626920.768526,
+        "description": "High ARP packet rate: 140 packets/second"
+      },
+      {
+        "timestamp": 1753626920.768526,
+        "description": "High number of unique senders: 142 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.768526,
+        "description": "High gratuitous ARP ratio: 98.59%"
+      },
+      {
+        "timestamp": 1753626920.768842,
+        "description": "High ARP packet rate: 141 packets/second"
+      },
+      {
+        "timestamp": 1753626920.768842,
+        "description": "High number of unique senders: 143 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.768842,
+        "description": "High gratuitous ARP ratio: 98.60%"
+      },
+      {
+        "timestamp": 1753626920.7690122,
+        "description": "High ARP packet rate: 142 packets/second"
+      },
+      {
+        "timestamp": 1753626920.7690122,
+        "description": "High number of unique senders: 144 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.7690122,
+        "description": "High gratuitous ARP ratio: 98.61%"
+      },
+      {
+        "timestamp": 1753626920.77934,
+        "description": "High ARP packet rate: 143 packets/second"
+      },
+      {
+        "timestamp": 1753626920.77934,
+        "description": "High number of unique senders: 145 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.77934,
+        "description": "High gratuitous ARP ratio: 98.62%"
+      },
+      {
+        "timestamp": 1753626920.7797117,
+        "description": "High ARP packet rate: 144 packets/second"
+      },
+      {
+        "timestamp": 1753626920.7797117,
+        "description": "High number of unique senders: 146 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.7797117,
+        "description": "High gratuitous ARP ratio: 98.63%"
+      },
+      {
+        "timestamp": 1753626920.7798886,
+        "description": "High ARP packet rate: 145 packets/second"
+      },
+      {
+        "timestamp": 1753626920.7798886,
+        "description": "High number of unique senders: 147 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.7798886,
+        "description": "High gratuitous ARP ratio: 98.64%"
+      },
+      {
+        "timestamp": 1753626920.7897475,
+        "description": "High ARP packet rate: 146 packets/second"
+      },
+      {
+        "timestamp": 1753626920.7897475,
+        "description": "High number of unique senders: 148 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.7897475,
+        "description": "High gratuitous ARP ratio: 98.65%"
+      },
+      {
+        "timestamp": 1753626920.79029,
+        "description": "High ARP packet rate: 147 packets/second"
+      },
+      {
+        "timestamp": 1753626920.79029,
+        "description": "High number of unique senders: 149 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.79029,
+        "description": "High gratuitous ARP ratio: 98.66%"
+      },
+      {
+        "timestamp": 1753626920.800327,
+        "description": "High ARP packet rate: 148 packets/second"
+      },
+      {
+        "timestamp": 1753626920.800327,
+        "description": "High number of unique senders: 150 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.800327,
+        "description": "High gratuitous ARP ratio: 98.67%"
+      },
+      {
+        "timestamp": 1753626920.8006296,
+        "description": "High ARP packet rate: 149 packets/second"
+      },
+      {
+        "timestamp": 1753626920.8006296,
+        "description": "High number of unique senders: 151 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.8006296,
+        "description": "High gratuitous ARP ratio: 98.68%"
+      },
+      {
+        "timestamp": 1753626920.8106987,
+        "description": "High ARP packet rate: 150 packets/second"
+      },
+      {
+        "timestamp": 1753626920.8106987,
+        "description": "High number of unique senders: 152 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.8109837,
+        "description": "High ARP packet rate: 151 packets/second"
+      },
+      {
+        "timestamp": 1753626920.8109837,
+        "description": "High number of unique senders: 153 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.8109837,
+        "description": "High gratuitous ARP ratio: 98.69%"
+      },
+      {
+        "timestamp": 1753626920.8209286,
+        "description": "High ARP packet rate: 152 packets/second"
+      },
+      {
+        "timestamp": 1753626920.8209286,
+        "description": "High number of unique senders: 154 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.8209286,
+        "description": "High gratuitous ARP ratio: 98.70%"
+      },
+      {
+        "timestamp": 1753626920.8212268,
+        "description": "High ARP packet rate: 153 packets/second"
+      },
+      {
+        "timestamp": 1753626920.8212268,
+        "description": "High number of unique senders: 155 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.8212268,
+        "description": "High gratuitous ARP ratio: 98.71%"
+      },
+      {
+        "timestamp": 1753626920.831373,
+        "description": "High ARP packet rate: 154 packets/second"
+      },
+      {
+        "timestamp": 1753626920.831373,
+        "description": "High number of unique senders: 156 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.831373,
+        "description": "High gratuitous ARP ratio: 98.72%"
+      },
+      {
+        "timestamp": 1753626920.841658,
+        "description": "High ARP packet rate: 155 packets/second"
+      },
+      {
+        "timestamp": 1753626920.841658,
+        "description": "High number of unique senders: 157 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.841658,
+        "description": "High gratuitous ARP ratio: 98.73%"
+      },
+      {
+        "timestamp": 1753626920.8420131,
+        "description": "High ARP packet rate: 156 packets/second"
+      },
+      {
+        "timestamp": 1753626920.8420131,
+        "description": "High number of unique senders: 158 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.8422427,
+        "description": "High ARP packet rate: 157 packets/second"
+      },
+      {
+        "timestamp": 1753626920.8422427,
+        "description": "High number of unique senders: 159 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.8422427,
+        "description": "High gratuitous ARP ratio: 98.74%"
+      },
+      {
+        "timestamp": 1753626920.8522756,
+        "description": "High ARP packet rate: 158 packets/second"
+      },
+      {
+        "timestamp": 1753626920.8522756,
+        "description": "High number of unique senders: 160 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.8522756,
+        "description": "High gratuitous ARP ratio: 98.75%"
+      },
+      {
+        "timestamp": 1753626920.8526607,
+        "description": "High ARP packet rate: 159 packets/second"
+      },
+      {
+        "timestamp": 1753626920.8526607,
+        "description": "High number of unique senders: 161 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.8526607,
+        "description": "High gratuitous ARP ratio: 98.76%"
+      },
+      {
+        "timestamp": 1753626920.862797,
+        "description": "High ARP packet rate: 160 packets/second"
+      },
+      {
+        "timestamp": 1753626920.862797,
+        "description": "High number of unique senders: 162 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.862797,
+        "description": "High gratuitous ARP ratio: 98.77%"
+      },
+      {
+        "timestamp": 1753626920.8631592,
+        "description": "High ARP packet rate: 161 packets/second"
+      },
+      {
+        "timestamp": 1753626920.8631592,
+        "description": "High number of unique senders: 163 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.8731966,
+        "description": "High ARP packet rate: 162 packets/second"
+      },
+      {
+        "timestamp": 1753626920.8731966,
+        "description": "High number of unique senders: 164 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.8731966,
+        "description": "High gratuitous ARP ratio: 98.78%"
+      },
+      {
+        "timestamp": 1753626920.883453,
+        "description": "High ARP packet rate: 163 packets/second"
+      },
+      {
+        "timestamp": 1753626920.883453,
+        "description": "High number of unique senders: 165 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.883453,
+        "description": "High gratuitous ARP ratio: 98.79%"
+      },
+      {
+        "timestamp": 1753626920.8838487,
+        "description": "High ARP packet rate: 164 packets/second"
+      },
+      {
+        "timestamp": 1753626920.8838487,
+        "description": "High number of unique senders: 166 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.8838487,
+        "description": "High gratuitous ARP ratio: 98.80%"
+      },
+      {
+        "timestamp": 1753626920.8841057,
+        "description": "High ARP packet rate: 165 packets/second"
+      },
+      {
+        "timestamp": 1753626920.8841057,
+        "description": "High number of unique senders: 167 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.8940551,
+        "description": "High ARP packet rate: 166 packets/second"
+      },
+      {
+        "timestamp": 1753626920.8940551,
+        "description": "High number of unique senders: 168 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.8940551,
+        "description": "High gratuitous ARP ratio: 98.81%"
+      },
+      {
+        "timestamp": 1753626920.904486,
+        "description": "High ARP packet rate: 167 packets/second"
+      },
+      {
+        "timestamp": 1753626920.904486,
+        "description": "High number of unique senders: 169 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.904486,
+        "description": "High gratuitous ARP ratio: 98.82%"
+      },
+      {
+        "timestamp": 1753626920.9048097,
+        "description": "High ARP packet rate: 168 packets/second"
+      },
+      {
+        "timestamp": 1753626920.9048097,
+        "description": "High number of unique senders: 170 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.9148319,
+        "description": "High ARP packet rate: 169 packets/second"
+      },
+      {
+        "timestamp": 1753626920.9148319,
+        "description": "High number of unique senders: 171 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.9148319,
+        "description": "High gratuitous ARP ratio: 98.83%"
+      },
+      {
+        "timestamp": 1753626920.9152112,
+        "description": "High ARP packet rate: 170 packets/second"
+      },
+      {
+        "timestamp": 1753626920.9152112,
+        "description": "High number of unique senders: 172 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.9152112,
+        "description": "High gratuitous ARP ratio: 98.84%"
+      },
+      {
+        "timestamp": 1753626920.9251099,
+        "description": "High ARP packet rate: 171 packets/second"
+      },
+      {
+        "timestamp": 1753626920.9251099,
+        "description": "High number of unique senders: 173 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.9255195,
+        "description": "High ARP packet rate: 172 packets/second"
+      },
+      {
+        "timestamp": 1753626920.9255195,
+        "description": "High number of unique senders: 174 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.9255195,
+        "description": "High gratuitous ARP ratio: 98.85%"
+      },
+      {
+        "timestamp": 1753626920.9257565,
+        "description": "High ARP packet rate: 173 packets/second"
+      },
+      {
+        "timestamp": 1753626920.9257565,
+        "description": "High number of unique senders: 175 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.9257565,
+        "description": "High gratuitous ARP ratio: 98.86%"
+      },
+      {
+        "timestamp": 1753626920.9354887,
+        "description": "High ARP packet rate: 174 packets/second"
+      },
+      {
+        "timestamp": 1753626920.9354887,
+        "description": "High number of unique senders: 176 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.9358547,
+        "description": "High ARP packet rate: 175 packets/second"
+      },
+      {
+        "timestamp": 1753626920.9358547,
+        "description": "High number of unique senders: 177 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.9358547,
+        "description": "High gratuitous ARP ratio: 98.87%"
+      },
+      {
+        "timestamp": 1753626920.9460888,
+        "description": "High ARP packet rate: 176 packets/second"
+      },
+      {
+        "timestamp": 1753626920.9460888,
+        "description": "High number of unique senders: 178 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.9460888,
+        "description": "High gratuitous ARP ratio: 98.88%"
+      },
+      {
+        "timestamp": 1753626920.946429,
+        "description": "High ARP packet rate: 177 packets/second"
+      },
+      {
+        "timestamp": 1753626920.946429,
+        "description": "High number of unique senders: 179 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.9561737,
+        "description": "High ARP packet rate: 178 packets/second"
+      },
+      {
+        "timestamp": 1753626920.9561737,
+        "description": "High number of unique senders: 180 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.9561737,
+        "description": "High gratuitous ARP ratio: 98.89%"
+      },
+      {
+        "timestamp": 1753626920.9565349,
+        "description": "High ARP packet rate: 179 packets/second"
+      },
+      {
+        "timestamp": 1753626920.9565349,
+        "description": "High number of unique senders: 181 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.9565349,
+        "description": "High gratuitous ARP ratio: 98.90%"
+      },
+      {
+        "timestamp": 1753626920.9664507,
+        "description": "High ARP packet rate: 180 packets/second"
+      },
+      {
+        "timestamp": 1753626920.9664507,
+        "description": "High number of unique senders: 182 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.9668636,
+        "description": "High ARP packet rate: 181 packets/second"
+      },
+      {
+        "timestamp": 1753626920.9668636,
+        "description": "High number of unique senders: 183 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.9668636,
+        "description": "High gratuitous ARP ratio: 98.91%"
+      },
+      {
+        "timestamp": 1753626920.9671261,
+        "description": "High ARP packet rate: 182 packets/second"
+      },
+      {
+        "timestamp": 1753626920.9671261,
+        "description": "High number of unique senders: 184 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.9768882,
+        "description": "High ARP packet rate: 183 packets/second"
+      },
+      {
+        "timestamp": 1753626920.9768882,
+        "description": "High number of unique senders: 185 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.9768882,
+        "description": "High gratuitous ARP ratio: 98.92%"
+      },
+      {
+        "timestamp": 1753626920.977301,
+        "description": "High ARP packet rate: 184 packets/second"
+      },
+      {
+        "timestamp": 1753626920.977301,
+        "description": "High number of unique senders: 186 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.9872332,
+        "description": "High ARP packet rate: 185 packets/second"
+      },
+      {
+        "timestamp": 1753626920.9872332,
+        "description": "High number of unique senders: 187 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.9872332,
+        "description": "High gratuitous ARP ratio: 98.93%"
+      },
+      {
+        "timestamp": 1753626920.987612,
+        "description": "High ARP packet rate: 186 packets/second"
+      },
+      {
+        "timestamp": 1753626920.987612,
+        "description": "High number of unique senders: 188 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.987612,
+        "description": "High gratuitous ARP ratio: 98.94%"
+      },
+      {
+        "timestamp": 1753626920.997505,
+        "description": "High ARP packet rate: 187 packets/second"
+      },
+      {
+        "timestamp": 1753626920.997505,
+        "description": "High number of unique senders: 189 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.9978974,
+        "description": "High ARP packet rate: 188 packets/second"
+      },
+      {
+        "timestamp": 1753626920.9978974,
+        "description": "High number of unique senders: 190 in 1 minute"
+      },
+      {
+        "timestamp": 1753626920.9978974,
+        "description": "High gratuitous ARP ratio: 98.95%"
+      },
+      {
+        "timestamp": 1753626920.9981725,
+        "description": "High ARP packet rate: 189 packets/second"
+      },
+      {
+        "timestamp": 1753626920.9981725,
+        "description": "High number of unique senders: 191 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.0078566,
+        "description": "High ARP packet rate: 190 packets/second"
+      },
+      {
+        "timestamp": 1753626921.0078566,
+        "description": "High number of unique senders: 192 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.0078566,
+        "description": "High gratuitous ARP ratio: 98.96%"
+      },
+      {
+        "timestamp": 1753626921.008186,
+        "description": "High ARP packet rate: 191 packets/second"
+      },
+      {
+        "timestamp": 1753626921.008186,
+        "description": "High number of unique senders: 193 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.0181246,
+        "description": "High ARP packet rate: 192 packets/second"
+      },
+      {
+        "timestamp": 1753626921.0181246,
+        "description": "High number of unique senders: 194 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.0181246,
+        "description": "High gratuitous ARP ratio: 98.97%"
+      },
+      {
+        "timestamp": 1753626921.0285735,
+        "description": "High ARP packet rate: 193 packets/second"
+      },
+      {
+        "timestamp": 1753626921.0285735,
+        "description": "High number of unique senders: 195 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.0290704,
+        "description": "High ARP packet rate: 194 packets/second"
+      },
+      {
+        "timestamp": 1753626921.0290704,
+        "description": "High number of unique senders: 196 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.0290704,
+        "description": "High gratuitous ARP ratio: 98.98%"
+      },
+      {
+        "timestamp": 1753626921.029317,
+        "description": "High ARP packet rate: 195 packets/second"
+      },
+      {
+        "timestamp": 1753626921.029317,
+        "description": "High number of unique senders: 197 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.0393407,
+        "description": "High number of unique senders: 198 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.0393407,
+        "description": "High gratuitous ARP ratio: 98.99%"
+      },
+      {
+        "timestamp": 1753626921.0497515,
+        "description": "High number of unique senders: 199 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.0501912,
+        "description": "High number of unique senders: 200 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.0501912,
+        "description": "High gratuitous ARP ratio: 99.00%"
+      },
+      {
+        "timestamp": 1753626921.0504937,
+        "description": "High number of unique senders: 201 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.0507731,
+        "description": "High number of unique senders: 202 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.0507731,
+        "description": "High gratuitous ARP ratio: 99.01%"
+      },
+      {
+        "timestamp": 1753626921.060641,
+        "description": "High number of unique senders: 203 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.07082,
+        "description": "High number of unique senders: 204 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.07082,
+        "description": "High gratuitous ARP ratio: 99.02%"
+      },
+      {
+        "timestamp": 1753626921.0814617,
+        "description": "High number of unique senders: 205 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.0819283,
+        "description": "High number of unique senders: 206 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.0819283,
+        "description": "High gratuitous ARP ratio: 99.03%"
+      },
+      {
+        "timestamp": 1753626921.082166,
+        "description": "High number of unique senders: 207 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.0917878,
+        "description": "High number of unique senders: 208 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.0917878,
+        "description": "High gratuitous ARP ratio: 99.04%"
+      },
+      {
+        "timestamp": 1753626921.0922048,
+        "description": "High number of unique senders: 209 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.0925472,
+        "description": "High number of unique senders: 210 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.0925472,
+        "description": "High gratuitous ARP ratio: 99.05%"
+      },
+      {
+        "timestamp": 1753626921.1022427,
+        "description": "High number of unique senders: 211 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.1129003,
+        "description": "High number of unique senders: 212 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.1129003,
+        "description": "High gratuitous ARP ratio: 99.06%"
+      },
+      {
+        "timestamp": 1753626921.1136003,
+        "description": "High number of unique senders: 213 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.123395,
+        "description": "High number of unique senders: 214 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.123395,
+        "description": "High gratuitous ARP ratio: 99.07%"
+      },
+      {
+        "timestamp": 1753626921.1241355,
+        "description": "High number of unique senders: 215 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.133967,
+        "description": "High number of unique senders: 216 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.1442142,
+        "description": "High number of unique senders: 217 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.1442142,
+        "description": "High gratuitous ARP ratio: 99.08%"
+      },
+      {
+        "timestamp": 1753626921.1545753,
+        "description": "High number of unique senders: 218 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.154973,
+        "description": "High number of unique senders: 219 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.154973,
+        "description": "High gratuitous ARP ratio: 99.09%"
+      },
+      {
+        "timestamp": 1753626921.1552467,
+        "description": "High number of unique senders: 220 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.1653292,
+        "description": "High number of unique senders: 221 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.1653292,
+        "description": "High gratuitous ARP ratio: 99.10%"
+      },
+      {
+        "timestamp": 1753626921.1657782,
+        "description": "High number of unique senders: 222 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.166028,
+        "description": "High number of unique senders: 223 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.1757333,
+        "description": "High number of unique senders: 224 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.1757333,
+        "description": "High gratuitous ARP ratio: 99.11%"
+      },
+      {
+        "timestamp": 1753626921.1762016,
+        "description": "High number of unique senders: 225 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.1765263,
+        "description": "High number of unique senders: 226 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.1765263,
+        "description": "High gratuitous ARP ratio: 99.12%"
+      },
+      {
+        "timestamp": 1753626921.1862285,
+        "description": "High number of unique senders: 227 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.1866393,
+        "description": "High number of unique senders: 228 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.196818,
+        "description": "High number of unique senders: 229 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.196818,
+        "description": "High gratuitous ARP ratio: 99.13%"
+      },
+      {
+        "timestamp": 1753626921.2074711,
+        "description": "High number of unique senders: 230 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.2080166,
+        "description": "High number of unique senders: 231 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.2082727,
+        "description": "High number of unique senders: 232 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.2082727,
+        "description": "High gratuitous ARP ratio: 99.14%"
+      },
+      {
+        "timestamp": 1753626921.217894,
+        "description": "High number of unique senders: 233 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.2183344,
+        "description": "High number of unique senders: 234 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.2183344,
+        "description": "High gratuitous ARP ratio: 99.15%"
+      },
+      {
+        "timestamp": 1753626921.2186303,
+        "description": "High number of unique senders: 235 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.2282276,
+        "description": "High number of unique senders: 236 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.228704,
+        "description": "High number of unique senders: 237 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.228704,
+        "description": "High gratuitous ARP ratio: 99.16%"
+      },
+      {
+        "timestamp": 1753626921.2290175,
+        "description": "High number of unique senders: 238 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.2293181,
+        "description": "High ARP packet rate: 196 packets/second"
+      },
+      {
+        "timestamp": 1753626921.2293181,
+        "description": "High number of unique senders: 239 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.2388053,
+        "description": "High number of unique senders: 240 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.2388053,
+        "description": "High gratuitous ARP ratio: 99.17%"
+      },
+      {
+        "timestamp": 1753626921.249316,
+        "description": "High number of unique senders: 241 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.259846,
+        "description": "High number of unique senders: 242 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.2700052,
+        "description": "High number of unique senders: 243 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.2700052,
+        "description": "High gratuitous ARP ratio: 99.18%"
+      },
+      {
+        "timestamp": 1753626921.2706203,
+        "description": "High number of unique senders: 244 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.2708962,
+        "description": "High number of unique senders: 245 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.280517,
+        "description": "High number of unique senders: 246 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.280517,
+        "description": "High gratuitous ARP ratio: 99.19%"
+      },
+      {
+        "timestamp": 1753626921.281134,
+        "description": "High number of unique senders: 247 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.2908437,
+        "description": "High number of unique senders: 248 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.291254,
+        "description": "High number of unique senders: 249 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.291254,
+        "description": "High gratuitous ARP ratio: 99.20%"
+      },
+      {
+        "timestamp": 1753626921.2915244,
+        "description": "High number of unique senders: 250 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.301271,
+        "description": "High number of unique senders: 251 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.3016562,
+        "description": "High number of unique senders: 252 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.3016562,
+        "description": "High gratuitous ARP ratio: 99.21%"
+      },
+      {
+        "timestamp": 1753626921.3116674,
+        "description": "High number of unique senders: 253 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.31209,
+        "description": "High number of unique senders: 254 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.3218758,
+        "description": "High number of unique senders: 255 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.3218758,
+        "description": "High gratuitous ARP ratio: 99.22%"
+      },
+      {
+        "timestamp": 1753626921.3322077,
+        "description": "High number of unique senders: 256 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.3326638,
+        "description": "High number of unique senders: 257 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.3426137,
+        "description": "High number of unique senders: 258 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.3430948,
+        "description": "High number of unique senders: 259 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.3430948,
+        "description": "High gratuitous ARP ratio: 99.23%"
+      },
+      {
+        "timestamp": 1753626921.3530602,
+        "description": "High number of unique senders: 260 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.3536956,
+        "description": "High number of unique senders: 261 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.3541205,
+        "description": "High number of unique senders: 262 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.3541205,
+        "description": "High gratuitous ARP ratio: 99.24%"
+      },
+      {
+        "timestamp": 1753626921.3739305,
+        "description": "High number of unique senders: 263 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.3744097,
+        "description": "High number of unique senders: 264 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.37474,
+        "description": "High number of unique senders: 265 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.37474,
+        "description": "High gratuitous ARP ratio: 99.25%"
+      },
+      {
+        "timestamp": 1753626921.3750637,
+        "description": "High number of unique senders: 266 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.384546,
+        "description": "High number of unique senders: 267 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.394802,
+        "description": "High number of unique senders: 268 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.3952894,
+        "description": "High number of unique senders: 269 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.3952894,
+        "description": "High gratuitous ARP ratio: 99.26%"
+      },
+      {
+        "timestamp": 1753626921.3956196,
+        "description": "High number of unique senders: 270 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.4052203,
+        "description": "High number of unique senders: 271 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.4156234,
+        "description": "High number of unique senders: 272 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.4259796,
+        "description": "High number of unique senders: 273 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.4259796,
+        "description": "High gratuitous ARP ratio: 99.27%"
+      },
+      {
+        "timestamp": 1753626921.4264436,
+        "description": "High number of unique senders: 274 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.4365697,
+        "description": "High number of unique senders: 275 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.446784,
+        "description": "High number of unique senders: 276 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.446784,
+        "description": "High gratuitous ARP ratio: 99.28%"
+      },
+      {
+        "timestamp": 1753626921.4570909,
+        "description": "High number of unique senders: 277 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.4676208,
+        "description": "High number of unique senders: 278 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.4680977,
+        "description": "High number of unique senders: 279 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.4780738,
+        "description": "High number of unique senders: 280 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.4780738,
+        "description": "High gratuitous ARP ratio: 99.29%"
+      },
+      {
+        "timestamp": 1753626921.4882195,
+        "description": "High number of unique senders: 281 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.4886515,
+        "description": "High number of unique senders: 282 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.4989164,
+        "description": "High number of unique senders: 283 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.5192916,
+        "description": "High number of unique senders: 284 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.5192916,
+        "description": "High gratuitous ARP ratio: 99.30%"
+      },
+      {
+        "timestamp": 1753626921.519832,
+        "description": "High number of unique senders: 285 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.520198,
+        "description": "High number of unique senders: 286 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.5296113,
+        "description": "High number of unique senders: 287 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.5300782,
+        "description": "High number of unique senders: 288 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.5300782,
+        "description": "High gratuitous ARP ratio: 99.31%"
+      },
+      {
+        "timestamp": 1753626921.5304272,
+        "description": "High number of unique senders: 289 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.540236,
+        "description": "High number of unique senders: 290 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.540743,
+        "description": "High number of unique senders: 291 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.541056,
+        "description": "High number of unique senders: 292 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.541056,
+        "description": "High gratuitous ARP ratio: 99.32%"
+      },
+      {
+        "timestamp": 1753626921.5506675,
+        "description": "High number of unique senders: 293 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.5506675,
+        "description": "IP 10.0.1.72 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626921.5611382,
+        "description": "High number of unique senders: 294 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.5616302,
+        "description": "High number of unique senders: 295 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.5713785,
+        "description": "High number of unique senders: 296 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.5719926,
+        "description": "High number of unique senders: 297 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.5719926,
+        "description": "High gratuitous ARP ratio: 99.33%"
+      },
+      {
+        "timestamp": 1753626921.5724273,
+        "description": "High number of unique senders: 298 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.581592,
+        "description": "High number of unique senders: 299 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.5820484,
+        "description": "High number of unique senders: 300 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.5919645,
+        "description": "High number of unique senders: 301 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.5919645,
+        "description": "High gratuitous ARP ratio: 99.34%"
+      },
+      {
+        "timestamp": 1753626921.5919645,
+        "description": "IP 10.0.1.98 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626921.602186,
+        "description": "High number of unique senders: 302 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.6029277,
+        "description": "High number of unique senders: 303 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.6033218,
+        "description": "High number of unique senders: 304 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.6126165,
+        "description": "High number of unique senders: 305 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.613267,
+        "description": "High number of unique senders: 306 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.613267,
+        "description": "High gratuitous ARP ratio: 99.35%"
+      },
+      {
+        "timestamp": 1753626921.6229775,
+        "description": "High number of unique senders: 307 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.623577,
+        "description": "High number of unique senders: 308 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.633209,
+        "description": "High number of unique senders: 309 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.6338816,
+        "description": "High number of unique senders: 310 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.6537933,
+        "description": "High number of unique senders: 311 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.6537933,
+        "description": "High gratuitous ARP ratio: 99.36%"
+      },
+      {
+        "timestamp": 1753626921.6537933,
+        "description": "IP 10.0.1.63 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626921.6544771,
+        "description": "High number of unique senders: 312 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.654984,
+        "description": "High number of unique senders: 313 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.6641223,
+        "description": "High number of unique senders: 314 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.6647375,
+        "description": "High number of unique senders: 315 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.6647375,
+        "description": "High gratuitous ARP ratio: 99.37%"
+      },
+      {
+        "timestamp": 1753626921.6652558,
+        "description": "High number of unique senders: 316 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.6745667,
+        "description": "High number of unique senders: 317 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.6751428,
+        "description": "High number of unique senders: 318 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.684748,
+        "description": "High number of unique senders: 319 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.6951504,
+        "description": "High number of unique senders: 320 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.6951504,
+        "description": "High gratuitous ARP ratio: 99.38%"
+      },
+      {
+        "timestamp": 1753626921.7054987,
+        "description": "High number of unique senders: 321 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.7054987,
+        "description": "IP 10.0.1.72 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626921.7061927,
+        "description": "High number of unique senders: 322 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.706624,
+        "description": "High number of unique senders: 323 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.706624,
+        "description": "IP 10.0.1.78 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626921.7158866,
+        "description": "High number of unique senders: 324 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.7168086,
+        "description": "High number of unique senders: 325 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.72613,
+        "description": "High number of unique senders: 326 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.72613,
+        "description": "High gratuitous ARP ratio: 99.39%"
+      },
+      {
+        "timestamp": 1753626921.7268817,
+        "description": "High number of unique senders: 327 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.7364447,
+        "description": "High number of unique senders: 328 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.7371733,
+        "description": "High number of unique senders: 329 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.7468638,
+        "description": "High number of unique senders: 330 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.7477424,
+        "description": "High number of unique senders: 331 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.7477424,
+        "description": "High gratuitous ARP ratio: 99.40%"
+      },
+      {
+        "timestamp": 1753626921.7572207,
+        "description": "High number of unique senders: 332 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.757897,
+        "description": "High number of unique senders: 333 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.7584126,
+        "description": "High number of unique senders: 334 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.7677598,
+        "description": "High number of unique senders: 335 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.7677598,
+        "description": "IP 10.0.1.56 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626921.7685459,
+        "description": "High number of unique senders: 336 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.7745352,
+        "description": "High number of unique senders: 337 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.777877,
+        "description": "High number of unique senders: 338 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.7881808,
+        "description": "High number of unique senders: 339 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.7888682,
+        "description": "High number of unique senders: 340 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.7888682,
+        "description": "IP 10.0.1.98 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626921.7894027,
+        "description": "High number of unique senders: 341 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.7987382,
+        "description": "High number of unique senders: 342 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.7995918,
+        "description": "High number of unique senders: 343 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.8093603,
+        "description": "High number of unique senders: 344 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.8197346,
+        "description": "High number of unique senders: 345 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.8299417,
+        "description": "High number of unique senders: 346 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.830798,
+        "description": "High number of unique senders: 347 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.831496,
+        "description": "High number of unique senders: 348 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.8404768,
+        "description": "High number of unique senders: 349 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.8508778,
+        "description": "High number of unique senders: 350 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.8517702,
+        "description": "High number of unique senders: 351 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.861353,
+        "description": "High number of unique senders: 352 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.862077,
+        "description": "High number of unique senders: 353 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.8715463,
+        "description": "High number of unique senders: 354 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.8715463,
+        "description": "IP 10.0.1.78 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626921.8722537,
+        "description": "High number of unique senders: 355 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.8728738,
+        "description": "High number of unique senders: 356 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.8822584,
+        "description": "High number of unique senders: 357 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.8925533,
+        "description": "High number of unique senders: 358 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.9027739,
+        "description": "High number of unique senders: 359 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.9035854,
+        "description": "High number of unique senders: 360 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.9130573,
+        "description": "High number of unique senders: 361 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.9138641,
+        "description": "High number of unique senders: 362 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.9144855,
+        "description": "High number of unique senders: 363 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.9234672,
+        "description": "High number of unique senders: 364 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.9234672,
+        "description": "IP 10.0.1.184 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626921.9243882,
+        "description": "High number of unique senders: 365 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.925018,
+        "description": "High number of unique senders: 366 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.9338002,
+        "description": "High number of unique senders: 367 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.9346788,
+        "description": "High number of unique senders: 368 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.9441469,
+        "description": "High number of unique senders: 369 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.9450562,
+        "description": "High number of unique senders: 370 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.945756,
+        "description": "High number of unique senders: 371 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.9546328,
+        "description": "High number of unique senders: 372 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.9647472,
+        "description": "High number of unique senders: 373 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.9750028,
+        "description": "High number of unique senders: 374 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.9759607,
+        "description": "High number of unique senders: 375 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.9856596,
+        "description": "High number of unique senders: 376 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.9866827,
+        "description": "High number of unique senders: 377 in 1 minute"
+      },
+      {
+        "timestamp": 1753626921.9962223,
+        "description": "High number of unique senders: 378 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.0063202,
+        "description": "High number of unique senders: 379 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.0072656,
+        "description": "High number of unique senders: 380 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.0164747,
+        "description": "High number of unique senders: 381 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.0171828,
+        "description": "High number of unique senders: 382 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.0268004,
+        "description": "High number of unique senders: 383 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.0268004,
+        "description": "IP 10.0.1.151 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626922.0278242,
+        "description": "High number of unique senders: 384 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.0285258,
+        "description": "High number of unique senders: 385 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.0375123,
+        "description": "High number of unique senders: 386 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.0384827,
+        "description": "High number of unique senders: 387 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.0477543,
+        "description": "High number of unique senders: 388 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.0487535,
+        "description": "High number of unique senders: 389 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.0494926,
+        "description": "High number of unique senders: 390 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.058248,
+        "description": "High number of unique senders: 391 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.0592227,
+        "description": "High number of unique senders: 392 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.0599148,
+        "description": "High number of unique senders: 393 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.0686126,
+        "description": "High number of unique senders: 394 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.069544,
+        "description": "High number of unique senders: 395 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.078792,
+        "description": "High number of unique senders: 396 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.0798013,
+        "description": "High number of unique senders: 397 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.0891082,
+        "description": "High number of unique senders: 398 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.0901532,
+        "description": "High number of unique senders: 399 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.0908725,
+        "description": "High number of unique senders: 400 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.0908725,
+        "description": "IP 10.0.1.113 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626922.0996025,
+        "description": "High number of unique senders: 401 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.1006398,
+        "description": "High number of unique senders: 402 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.1100502,
+        "description": "High number of unique senders: 403 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.1100502,
+        "description": "IP 10.0.1.98 changed MAC 6 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626922.1110177,
+        "description": "High number of unique senders: 404 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.120355,
+        "description": "High number of unique senders: 405 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.1213815,
+        "description": "High number of unique senders: 406 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.122151,
+        "description": "High number of unique senders: 407 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.131158,
+        "description": "High number of unique senders: 408 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.1414413,
+        "description": "High number of unique senders: 409 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.1515365,
+        "description": "High number of unique senders: 410 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.1528766,
+        "description": "High number of unique senders: 411 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.1528766,
+        "description": "IP 10.0.1.78 changed MAC 6 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626922.1618228,
+        "description": "High number of unique senders: 412 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.1627738,
+        "description": "High number of unique senders: 413 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.1636329,
+        "description": "High number of unique senders: 414 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.1722836,
+        "description": "High number of unique senders: 415 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.1734688,
+        "description": "High number of unique senders: 416 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.1826427,
+        "description": "High number of unique senders: 417 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.1837943,
+        "description": "High number of unique senders: 418 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.1849513,
+        "description": "High number of unique senders: 419 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.1930914,
+        "description": "High number of unique senders: 420 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.2033882,
+        "description": "High number of unique senders: 421 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.2044942,
+        "description": "High number of unique senders: 422 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.2054198,
+        "description": "High number of unique senders: 423 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.2063403,
+        "description": "High number of unique senders: 424 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.2138515,
+        "description": "High number of unique senders: 425 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.2138515,
+        "description": "IP 10.0.1.8 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626922.2148821,
+        "description": "High number of unique senders: 426 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.224292,
+        "description": "High number of unique senders: 427 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.2254531,
+        "description": "High number of unique senders: 428 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.2254531,
+        "description": "IP 10.0.1.68 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626922.2264695,
+        "description": "High number of unique senders: 429 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.2349722,
+        "description": "High number of unique senders: 430 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.2365904,
+        "description": "High number of unique senders: 431 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.2455122,
+        "description": "High number of unique senders: 432 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.2455122,
+        "description": "IP 10.0.1.24 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626922.2468355,
+        "description": "High number of unique senders: 433 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.2479348,
+        "description": "High number of unique senders: 434 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.2558424,
+        "description": "High number of unique senders: 435 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.2558424,
+        "description": "IP 10.0.1.242 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626922.2572339,
+        "description": "High number of unique senders: 436 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.2582958,
+        "description": "High ARP packet rate: 197 packets/second"
+      },
+      {
+        "timestamp": 1753626922.2582958,
+        "description": "High number of unique senders: 437 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.2662895,
+        "description": "High number of unique senders: 438 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.2767894,
+        "description": "High number of unique senders: 439 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.2870004,
+        "description": "High number of unique senders: 440 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.3174036,
+        "description": "High number of unique senders: 441 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.3186944,
+        "description": "High number of unique senders: 442 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.3198733,
+        "description": "High number of unique senders: 443 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.3279111,
+        "description": "High number of unique senders: 444 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.3291621,
+        "description": "High number of unique senders: 445 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.3379707,
+        "description": "High number of unique senders: 446 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.3392427,
+        "description": "High number of unique senders: 447 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.3403375,
+        "description": "High number of unique senders: 448 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.3414183,
+        "description": "High number of unique senders: 449 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.3483675,
+        "description": "High number of unique senders: 450 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.349775,
+        "description": "High number of unique senders: 451 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.3587706,
+        "description": "High number of unique senders: 452 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.3602064,
+        "description": "High number of unique senders: 453 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.379619,
+        "description": "High number of unique senders: 454 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.3810372,
+        "description": "High number of unique senders: 455 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.382145,
+        "description": "High number of unique senders: 456 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.3899555,
+        "description": "High number of unique senders: 457 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.3912642,
+        "description": "High number of unique senders: 458 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.3925822,
+        "description": "High number of unique senders: 459 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.3939183,
+        "description": "High number of unique senders: 460 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.400645,
+        "description": "High number of unique senders: 461 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.410726,
+        "description": "High number of unique senders: 462 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.4123456,
+        "description": "High number of unique senders: 463 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.4123456,
+        "description": "IP 10.0.1.185 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626922.4212322,
+        "description": "High number of unique senders: 464 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.4227045,
+        "description": "High number of unique senders: 465 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.4316022,
+        "description": "High number of unique senders: 466 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.433018,
+        "description": "High number of unique senders: 467 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.4343188,
+        "description": "High number of unique senders: 468 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.442179,
+        "description": "High number of unique senders: 469 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.4435751,
+        "description": "High number of unique senders: 470 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.4448957,
+        "description": "High number of unique senders: 471 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.452916,
+        "description": "High number of unique senders: 472 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.4634955,
+        "description": "High number of unique senders: 473 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.473571,
+        "description": "High number of unique senders: 474 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.4838738,
+        "description": "High number of unique senders: 475 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.4853995,
+        "description": "High number of unique senders: 476 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.4943798,
+        "description": "High number of unique senders: 477 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.4958515,
+        "description": "High number of unique senders: 478 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.5047452,
+        "description": "High number of unique senders: 479 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.5061035,
+        "description": "High ARP packet rate: 198 packets/second"
+      },
+      {
+        "timestamp": 1753626922.5061035,
+        "description": "High number of unique senders: 480 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.5073295,
+        "description": "High ARP packet rate: 199 packets/second"
+      },
+      {
+        "timestamp": 1753626922.5073295,
+        "description": "High number of unique senders: 481 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.515269,
+        "description": "High ARP packet rate: 200 packets/second"
+      },
+      {
+        "timestamp": 1753626922.515269,
+        "description": "High number of unique senders: 482 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.5169024,
+        "description": "High ARP packet rate: 201 packets/second"
+      },
+      {
+        "timestamp": 1753626922.5169024,
+        "description": "High number of unique senders: 483 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.5255637,
+        "description": "High number of unique senders: 484 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.5271065,
+        "description": "High number of unique senders: 485 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.528373,
+        "description": "High number of unique senders: 486 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.529617,
+        "description": "High number of unique senders: 487 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.5361333,
+        "description": "High number of unique senders: 488 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.5378184,
+        "description": "High number of unique senders: 489 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.5378184,
+        "description": "IP 10.0.1.78 changed MAC 7 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626922.5468245,
+        "description": "High number of unique senders: 490 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.548421,
+        "description": "High number of unique senders: 491 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.5680144,
+        "description": "High number of unique senders: 492 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.5780346,
+        "description": "High number of unique senders: 493 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.579646,
+        "description": "High number of unique senders: 494 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.580885,
+        "description": "High number of unique senders: 495 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.5885117,
+        "description": "High number of unique senders: 496 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.5900095,
+        "description": "High number of unique senders: 497 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.5912592,
+        "description": "High number of unique senders: 498 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.599099,
+        "description": "High number of unique senders: 499 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.6006734,
+        "description": "High number of unique senders: 500 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.6096065,
+        "description": "High number of unique senders: 501 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.611047,
+        "description": "High number of unique senders: 502 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.6200864,
+        "description": "High number of unique senders: 503 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.6219492,
+        "description": "High number of unique senders: 504 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.6232727,
+        "description": "High number of unique senders: 505 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.6232727,
+        "description": "High gratuitous ARP ratio: 99.41%"
+      },
+      {
+        "timestamp": 1753626922.6307092,
+        "description": "High number of unique senders: 506 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.6323652,
+        "description": "High number of unique senders: 507 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.6412613,
+        "description": "High number of unique senders: 508 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.6430566,
+        "description": "High number of unique senders: 509 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.6519306,
+        "description": "High number of unique senders: 510 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.662349,
+        "description": "High number of unique senders: 511 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.6639817,
+        "description": "High number of unique senders: 512 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.6728575,
+        "description": "High number of unique senders: 513 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.6728575,
+        "description": "High gratuitous ARP ratio: 99.42%"
+      },
+      {
+        "timestamp": 1753626922.674764,
+        "description": "High number of unique senders: 514 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.6760666,
+        "description": "High number of unique senders: 515 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.683323,
+        "description": "High number of unique senders: 516 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.684837,
+        "description": "High number of unique senders: 517 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.6939058,
+        "description": "High number of unique senders: 518 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.6953738,
+        "description": "High number of unique senders: 519 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.696665,
+        "description": "High number of unique senders: 520 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.7046611,
+        "description": "High ARP packet rate: 202 packets/second"
+      },
+      {
+        "timestamp": 1753626922.7046611,
+        "description": "High number of unique senders: 521 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.7070303,
+        "description": "High number of unique senders: 522 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.7070303,
+        "description": "High gratuitous ARP ratio: 99.43%"
+      },
+      {
+        "timestamp": 1753626922.7070303,
+        "description": "IP 10.0.1.72 changed MAC 6 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626922.7254038,
+        "description": "High number of unique senders: 523 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.7460933,
+        "description": "High number of unique senders: 524 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.747607,
+        "description": "High number of unique senders: 525 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.7564483,
+        "description": "High number of unique senders: 526 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.7580585,
+        "description": "High number of unique senders: 527 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.7593827,
+        "description": "High number of unique senders: 528 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.7669938,
+        "description": "High number of unique senders: 529 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.7687664,
+        "description": "High number of unique senders: 530 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.7687664,
+        "description": "IP 10.0.1.77 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626922.777402,
+        "description": "High number of unique senders: 531 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.777402,
+        "description": "High gratuitous ARP ratio: 99.44%"
+      },
+      {
+        "timestamp": 1753626922.78776,
+        "description": "High number of unique senders: 532 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.7895231,
+        "description": "High number of unique senders: 533 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.7895231,
+        "description": "IP 10.0.1.8 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626922.7909398,
+        "description": "High number of unique senders: 534 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.7982259,
+        "description": "High number of unique senders: 535 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.8000262,
+        "description": "High number of unique senders: 536 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.8013642,
+        "description": "High number of unique senders: 537 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.8088245,
+        "description": "High number of unique senders: 538 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.8088245,
+        "description": "IP 10.0.1.227 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626922.8108215,
+        "description": "High number of unique senders: 539 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.8193629,
+        "description": "High number of unique senders: 540 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.821142,
+        "description": "High number of unique senders: 541 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.821142,
+        "description": "High gratuitous ARP ratio: 99.45%"
+      },
+      {
+        "timestamp": 1753626922.821142,
+        "description": "IP 10.0.1.242 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626922.829675,
+        "description": "High number of unique senders: 542 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.829675,
+        "description": "IP 10.0.1.224 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626922.8315797,
+        "description": "High number of unique senders: 543 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.8315797,
+        "description": "IP 10.0.1.98 changed MAC 7 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626922.8331215,
+        "description": "High number of unique senders: 544 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.8400111,
+        "description": "High number of unique senders: 545 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.8400111,
+        "description": "IP 10.0.1.63 changed MAC 6 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626922.8420508,
+        "description": "High number of unique senders: 546 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.8438811,
+        "description": "High number of unique senders: 547 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.8438811,
+        "description": "IP 10.0.1.155 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626922.8606706,
+        "description": "High number of unique senders: 548 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.8631632,
+        "description": "High number of unique senders: 549 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.8651013,
+        "description": "High number of unique senders: 550 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.8711455,
+        "description": "High number of unique senders: 551 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.8711455,
+        "description": "High gratuitous ARP ratio: 99.46%"
+      },
+      {
+        "timestamp": 1753626922.873343,
+        "description": "High number of unique senders: 552 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.875064,
+        "description": "High number of unique senders: 553 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.8818254,
+        "description": "High number of unique senders: 554 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.892349,
+        "description": "High number of unique senders: 555 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.9027467,
+        "description": "High number of unique senders: 556 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.9047744,
+        "description": "High number of unique senders: 557 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.913242,
+        "description": "High number of unique senders: 558 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.913242,
+        "description": "IP 10.0.1.184 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626922.9154649,
+        "description": "High number of unique senders: 559 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.9171374,
+        "description": "High number of unique senders: 560 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.9171374,
+        "description": "IP 10.0.1.56 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626922.923827,
+        "description": "High number of unique senders: 561 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.923827,
+        "description": "High gratuitous ARP ratio: 99.47%"
+      },
+      {
+        "timestamp": 1753626922.9257388,
+        "description": "High number of unique senders: 562 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.9274013,
+        "description": "High number of unique senders: 563 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.929495,
+        "description": "High number of unique senders: 564 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.9343395,
+        "description": "High number of unique senders: 565 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.9362636,
+        "description": "High number of unique senders: 566 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.9378808,
+        "description": "High number of unique senders: 567 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.9450486,
+        "description": "High number of unique senders: 568 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.9469578,
+        "description": "High number of unique senders: 569 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.948618,
+        "description": "High number of unique senders: 570 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.9556727,
+        "description": "High number of unique senders: 571 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.9578695,
+        "description": "High number of unique senders: 572 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.9578695,
+        "description": "High gratuitous ARP ratio: 99.48%"
+      },
+      {
+        "timestamp": 1753626922.9597204,
+        "description": "High number of unique senders: 573 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.9661565,
+        "description": "High number of unique senders: 574 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.967893,
+        "description": "High number of unique senders: 575 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.976456,
+        "description": "High number of unique senders: 576 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.976456,
+        "description": "IP 10.0.1.59 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626922.9871204,
+        "description": "High number of unique senders: 577 in 1 minute"
+      },
+      {
+        "timestamp": 1753626922.9973052,
+        "description": "High number of unique senders: 578 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.0077069,
+        "description": "High number of unique senders: 579 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.0077069,
+        "description": "IP 10.0.1.106 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.009823,
+        "description": "High number of unique senders: 580 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.0181804,
+        "description": "High number of unique senders: 581 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.0203238,
+        "description": "High number of unique senders: 582 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.0282552,
+        "description": "High number of unique senders: 583 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.0282552,
+        "description": "High gratuitous ARP ratio: 99.49%"
+      },
+      {
+        "timestamp": 1753626923.0282552,
+        "description": "IP 10.0.1.59 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.0304246,
+        "description": "High number of unique senders: 584 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.0322766,
+        "description": "High number of unique senders: 585 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.0322766,
+        "description": "IP 10.0.1.90 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.0385063,
+        "description": "High number of unique senders: 586 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.0405972,
+        "description": "High number of unique senders: 587 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.0405972,
+        "description": "IP 10.0.1.8 changed MAC 6 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.0490785,
+        "description": "High number of unique senders: 588 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.0513604,
+        "description": "High number of unique senders: 589 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.0595376,
+        "description": "High number of unique senders: 590 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.0619192,
+        "description": "High number of unique senders: 591 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.0619192,
+        "description": "IP 10.0.1.6 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.0641122,
+        "description": "High number of unique senders: 592 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.0641122,
+        "description": "IP 10.0.1.66 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.0701222,
+        "description": "High number of unique senders: 593 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.0725825,
+        "description": "High number of unique senders: 594 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.0806127,
+        "description": "High number of unique senders: 595 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.0806127,
+        "description": "High gratuitous ARP ratio: 99.50%"
+      },
+      {
+        "timestamp": 1753626923.090899,
+        "description": "High number of unique senders: 596 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.0934083,
+        "description": "High number of unique senders: 597 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.0934083,
+        "description": "IP 10.0.1.80 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.0957124,
+        "description": "High number of unique senders: 598 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.0957124,
+        "description": "IP 10.0.1.80 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.0980349,
+        "description": "High number of unique senders: 599 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.0980349,
+        "description": "IP 10.0.1.98 changed MAC 8 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.1016672,
+        "description": "High number of unique senders: 600 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.1052794,
+        "description": "High number of unique senders: 601 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.1052794,
+        "description": "IP 10.0.1.151 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.1076334,
+        "description": "High number of unique senders: 602 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.112102,
+        "description": "High number of unique senders: 603 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.11444,
+        "description": "High number of unique senders: 604 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.11444,
+        "description": "IP 10.0.1.76 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.1167562,
+        "description": "High number of unique senders: 605 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.122061,
+        "description": "High number of unique senders: 606 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.1245828,
+        "description": "High number of unique senders: 607 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.1245828,
+        "description": "High gratuitous ARP ratio: 99.51%"
+      },
+      {
+        "timestamp": 1753626923.1245828,
+        "description": "IP 10.0.1.249 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.1325119,
+        "description": "High number of unique senders: 608 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.1353376,
+        "description": "High number of unique senders: 609 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.1427047,
+        "description": "High number of unique senders: 610 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.1427047,
+        "description": "IP 10.0.1.78 changed MAC 8 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.1458828,
+        "description": "High number of unique senders: 611 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.153177,
+        "description": "High number of unique senders: 612 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.1560638,
+        "description": "High number of unique senders: 613 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.1560638,
+        "description": "IP 10.0.1.214 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.1636462,
+        "description": "High number of unique senders: 614 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.166622,
+        "description": "High number of unique senders: 615 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.1745672,
+        "description": "High number of unique senders: 616 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.1782892,
+        "description": "High number of unique senders: 617 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.2057314,
+        "description": "High number of unique senders: 618 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.2085497,
+        "description": "High number of unique senders: 619 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.2085497,
+        "description": "High gratuitous ARP ratio: 99.52%"
+      },
+      {
+        "timestamp": 1753626923.2110636,
+        "description": "High number of unique senders: 620 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.2162328,
+        "description": "High number of unique senders: 621 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.2192602,
+        "description": "High number of unique senders: 622 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.2222192,
+        "description": "High number of unique senders: 623 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.2370515,
+        "description": "High number of unique senders: 624 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.2370515,
+        "description": "IP 10.0.1.224 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.2474804,
+        "description": "High number of unique senders: 625 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.250636,
+        "description": "High number of unique senders: 626 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.250636,
+        "description": "IP 10.0.1.242 changed MAC 6 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.2579823,
+        "description": "High number of unique senders: 627 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.2610705,
+        "description": "High number of unique senders: 628 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.2642112,
+        "description": "High number of unique senders: 629 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.2642112,
+        "description": "IP 10.0.1.31 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.2684135,
+        "description": "High number of unique senders: 630 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.2684135,
+        "description": "IP 10.0.1.185 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.2787466,
+        "description": "High number of unique senders: 631 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.2787466,
+        "description": "IP 10.0.1.38 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.281973,
+        "description": "High number of unique senders: 632 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.281973,
+        "description": "High gratuitous ARP ratio: 99.53%"
+      },
+      {
+        "timestamp": 1753626923.2849894,
+        "description": "High number of unique senders: 633 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.2890797,
+        "description": "High number of unique senders: 634 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.2995253,
+        "description": "High number of unique senders: 635 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.3027117,
+        "description": "High number of unique senders: 636 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.305973,
+        "description": "High number of unique senders: 637 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.305973,
+        "description": "IP 10.0.1.15 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.30995,
+        "description": "High number of unique senders: 638 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.313022,
+        "description": "High number of unique senders: 639 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.313022,
+        "description": "IP 10.0.1.170 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.3160527,
+        "description": "High number of unique senders: 640 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.3204713,
+        "description": "High number of unique senders: 641 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.3306913,
+        "description": "High number of unique senders: 642 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.34105,
+        "description": "High number of unique senders: 643 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.344302,
+        "description": "High number of unique senders: 644 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.3471873,
+        "description": "High number of unique senders: 645 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.3513927,
+        "description": "High number of unique senders: 646 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.3513927,
+        "description": "High gratuitous ARP ratio: 99.54%"
+      },
+      {
+        "timestamp": 1753626923.3543222,
+        "description": "High number of unique senders: 647 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.361784,
+        "description": "High number of unique senders: 648 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.3649485,
+        "description": "High number of unique senders: 649 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.3677742,
+        "description": "High number of unique senders: 650 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.3720186,
+        "description": "High number of unique senders: 651 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.3749647,
+        "description": "High number of unique senders: 652 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.3749647,
+        "description": "IP 10.0.1.56 changed MAC 6 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.3779373,
+        "description": "High number of unique senders: 653 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.382459,
+        "description": "High number of unique senders: 654 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.3927245,
+        "description": "High number of unique senders: 655 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.3959835,
+        "description": "High number of unique senders: 656 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.3988833,
+        "description": "High number of unique senders: 657 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.4133775,
+        "description": "High number of unique senders: 658 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.4133775,
+        "description": "IP 10.0.1.151 changed MAC 6 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.4164836,
+        "description": "High number of unique senders: 659 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.419309,
+        "description": "High number of unique senders: 660 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.419309,
+        "description": "High gratuitous ARP ratio: 99.55%"
+      },
+      {
+        "timestamp": 1753626923.4237907,
+        "description": "High number of unique senders: 661 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.4237907,
+        "description": "IP 10.0.1.13 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.4269838,
+        "description": "High number of unique senders: 662 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.4337854,
+        "description": "High number of unique senders: 663 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.4368143,
+        "description": "High number of unique senders: 664 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.439839,
+        "description": "High number of unique senders: 665 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.439839,
+        "description": "IP 10.0.1.111 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.4442742,
+        "description": "High number of unique senders: 666 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.4548602,
+        "description": "High number of unique senders: 667 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.465278,
+        "description": "High number of unique senders: 668 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.4686682,
+        "description": "High number of unique senders: 669 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.4755218,
+        "description": "High number of unique senders: 670 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.4793315,
+        "description": "High number of unique senders: 671 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.4859197,
+        "description": "High number of unique senders: 672 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.4896188,
+        "description": "High number of unique senders: 673 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.4896188,
+        "description": "IP 10.0.1.219 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.4966228,
+        "description": "High number of unique senders: 674 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.5001523,
+        "description": "High number of unique senders: 675 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.5001523,
+        "description": "High gratuitous ARP ratio: 99.56%"
+      },
+      {
+        "timestamp": 1753626923.5068994,
+        "description": "High number of unique senders: 676 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.5109036,
+        "description": "High number of unique senders: 677 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.5171373,
+        "description": "High number of unique senders: 678 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.520601,
+        "description": "High number of unique senders: 679 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.5245638,
+        "description": "High number of unique senders: 680 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.5279326,
+        "description": "High number of unique senders: 681 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.531215,
+        "description": "High number of unique senders: 682 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.531215,
+        "description": "IP 10.0.1.72 changed MAC 7 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.5345042,
+        "description": "High number of unique senders: 683 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.5345042,
+        "description": "IP 10.0.1.80 changed MAC 6 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.5380447,
+        "description": "High number of unique senders: 684 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.5413663,
+        "description": "High number of unique senders: 685 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.5413663,
+        "description": "IP 10.0.1.206 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.5449963,
+        "description": "High number of unique senders: 686 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.5449963,
+        "description": "IP 10.0.1.6 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.5484195,
+        "description": "High number of unique senders: 687 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.5484195,
+        "description": "IP 10.0.1.185 changed MAC 6 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.551797,
+        "description": "High number of unique senders: 688 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.5551953,
+        "description": "High number of unique senders: 689 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.5551953,
+        "description": "IP 10.0.1.234 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.5588095,
+        "description": "High number of unique senders: 690 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.5588095,
+        "description": "High gratuitous ARP ratio: 99.57%"
+      },
+      {
+        "timestamp": 1753626923.5622363,
+        "description": "High number of unique senders: 691 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.5656512,
+        "description": "High number of unique senders: 692 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.5690048,
+        "description": "High number of unique senders: 693 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.5690048,
+        "description": "IP 10.0.1.59 changed MAC 6 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.57883,
+        "description": "High number of unique senders: 694 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.5826178,
+        "description": "High number of unique senders: 695 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.5891986,
+        "description": "High number of unique senders: 696 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.592886,
+        "description": "High number of unique senders: 697 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.5964599,
+        "description": "High number of unique senders: 698 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.5964599,
+        "description": "IP 10.0.1.114 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.6095924,
+        "description": "High number of unique senders: 699 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.6095924,
+        "description": "IP 10.0.1.172 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.613597,
+        "description": "High number of unique senders: 700 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.613597,
+        "description": "IP 10.0.1.98 changed MAC 9 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.6173835,
+        "description": "High number of unique senders: 701 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.6173835,
+        "description": "IP 10.0.1.185 changed MAC 7 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.6211965,
+        "description": "High number of unique senders: 702 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.6211965,
+        "description": "IP 10.0.1.249 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.624963,
+        "description": "High number of unique senders: 703 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.6303651,
+        "description": "High number of unique senders: 704 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.6303651,
+        "description": "IP 10.0.1.206 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.640677,
+        "description": "High number of unique senders: 705 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.6445227,
+        "description": "High number of unique senders: 706 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.6445227,
+        "description": "High gratuitous ARP ratio: 99.58%"
+      },
+      {
+        "timestamp": 1753626923.650855,
+        "description": "High number of unique senders: 707 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.650855,
+        "description": "IP 10.0.1.223 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.661165,
+        "description": "High number of unique senders: 708 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.6650221,
+        "description": "High number of unique senders: 709 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.6714368,
+        "description": "High number of unique senders: 710 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.675183,
+        "description": "High number of unique senders: 711 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.6788235,
+        "description": "High number of unique senders: 712 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.6825323,
+        "description": "High number of unique senders: 713 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.6862164,
+        "description": "High number of unique senders: 714 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.6899028,
+        "description": "High number of unique senders: 715 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.6936133,
+        "description": "High number of unique senders: 716 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.6936133,
+        "description": "IP 10.0.1.38 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.697539,
+        "description": "High number of unique senders: 717 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.702877,
+        "description": "High number of unique senders: 718 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.7068672,
+        "description": "High number of unique senders: 719 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.7132044,
+        "description": "High number of unique senders: 720 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.7132044,
+        "description": "IP 10.0.1.248 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.72351,
+        "description": "High number of unique senders: 721 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.7281137,
+        "description": "High number of unique senders: 722 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.7340498,
+        "description": "High number of unique senders: 723 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.7340498,
+        "description": "High gratuitous ARP ratio: 99.59%"
+      },
+      {
+        "timestamp": 1753626923.7340498,
+        "description": "IP 10.0.1.20 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.744273,
+        "description": "High number of unique senders: 724 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.748628,
+        "description": "High number of unique senders: 725 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.752626,
+        "description": "High number of unique senders: 726 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.7566261,
+        "description": "High number of unique senders: 727 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.7566261,
+        "description": "IP 10.0.1.242 changed MAC 7 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.7607024,
+        "description": "High number of unique senders: 728 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.7650337,
+        "description": "High number of unique senders: 729 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.7753265,
+        "description": "High number of unique senders: 730 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.7753265,
+        "description": "IP 10.0.1.224 changed MAC 6 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.779388,
+        "description": "High number of unique senders: 731 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.779388,
+        "description": "IP 10.0.1.80 changed MAC 7 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.7859123,
+        "description": "High number of unique senders: 732 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.7960174,
+        "description": "High number of unique senders: 733 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.80041,
+        "description": "High number of unique senders: 734 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.806275,
+        "description": "High number of unique senders: 735 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.8164625,
+        "description": "High number of unique senders: 736 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.8164625,
+        "description": "IP 10.0.1.156 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.8208468,
+        "description": "High number of unique senders: 737 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.8250198,
+        "description": "High number of unique senders: 738 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.8290596,
+        "description": "High number of unique senders: 739 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.8371317,
+        "description": "High number of unique senders: 740 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.841568,
+        "description": "High number of unique senders: 741 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.841568,
+        "description": "High gratuitous ARP ratio: 99.60%"
+      },
+      {
+        "timestamp": 1753626923.841568,
+        "description": "IP 10.0.1.229 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.847642,
+        "description": "High number of unique senders: 742 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.847642,
+        "description": "IP 10.0.1.59 changed MAC 7 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.8518376,
+        "description": "High number of unique senders: 743 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.858024,
+        "description": "High number of unique senders: 744 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.8622963,
+        "description": "High number of unique senders: 745 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.8622963,
+        "description": "IP 10.0.1.20 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.8664896,
+        "description": "High number of unique senders: 746 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.8664896,
+        "description": "IP 10.0.1.89 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.8788297,
+        "description": "High number of unique senders: 747 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.8788297,
+        "description": "IP 10.0.1.122 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.883451,
+        "description": "High number of unique senders: 748 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.883451,
+        "description": "IP 10.0.1.33 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.888036,
+        "description": "High number of unique senders: 749 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.8927252,
+        "description": "High number of unique senders: 750 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.8927252,
+        "description": "IP 10.0.1.91 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.8998306,
+        "description": "High number of unique senders: 751 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.9046884,
+        "description": "High number of unique senders: 752 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.9046884,
+        "description": "IP 10.0.1.76 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.9092958,
+        "description": "High number of unique senders: 753 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.9092958,
+        "description": "IP 10.0.1.237 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.9140656,
+        "description": "High number of unique senders: 754 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.9140656,
+        "description": "IP 10.0.1.15 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.9187822,
+        "description": "High number of unique senders: 755 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.923488,
+        "description": "High number of unique senders: 756 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.923488,
+        "description": "IP 10.0.1.66 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.9282315,
+        "description": "High number of unique senders: 757 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.9333258,
+        "description": "High number of unique senders: 758 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.938856,
+        "description": "High number of unique senders: 759 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.9443111,
+        "description": "High number of unique senders: 760 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.9443111,
+        "description": "High gratuitous ARP ratio: 99.61%"
+      },
+      {
+        "timestamp": 1753626923.9443111,
+        "description": "IP 10.0.1.88 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.9496663,
+        "description": "High number of unique senders: 761 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.95465,
+        "description": "High number of unique senders: 762 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.9594195,
+        "description": "High number of unique senders: 763 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.9642184,
+        "description": "High number of unique senders: 764 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.9642184,
+        "description": "IP 10.0.1.8 changed MAC 7 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.9689817,
+        "description": "High number of unique senders: 765 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.9737236,
+        "description": "High number of unique senders: 766 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.9737236,
+        "description": "IP 10.0.1.46 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.9789357,
+        "description": "High number of unique senders: 767 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.984144,
+        "description": "High number of unique senders: 768 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.984144,
+        "description": "IP 10.0.1.60 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626923.99332,
+        "description": "High number of unique senders: 769 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.9989982,
+        "description": "High number of unique senders: 770 in 1 minute"
+      },
+      {
+        "timestamp": 1753626923.9989982,
+        "description": "IP 10.0.1.88 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.0040662,
+        "description": "High number of unique senders: 771 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.0040662,
+        "description": "IP 10.0.1.170 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.0090575,
+        "description": "High number of unique senders: 772 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.014349,
+        "description": "High number of unique senders: 773 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.0196226,
+        "description": "High number of unique senders: 774 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.0196226,
+        "description": "IP 10.0.1.223 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.024647,
+        "description": "High number of unique senders: 775 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.0352025,
+        "description": "High number of unique senders: 776 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.0550845,
+        "description": "High number of unique senders: 777 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.060526,
+        "description": "High number of unique senders: 778 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.0658536,
+        "description": "High number of unique senders: 779 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.0711958,
+        "description": "High number of unique senders: 780 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.0711958,
+        "description": "High gratuitous ARP ratio: 99.62%"
+      },
+      {
+        "timestamp": 1753626924.0763457,
+        "description": "High number of unique senders: 781 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.081419,
+        "description": "High number of unique senders: 782 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.0866845,
+        "description": "High number of unique senders: 783 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.0918293,
+        "description": "High number of unique senders: 784 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.0918293,
+        "description": "IP 10.0.1.100 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.0970583,
+        "description": "High number of unique senders: 785 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.102295,
+        "description": "High number of unique senders: 786 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.1075933,
+        "description": "High number of unique senders: 787 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.1075933,
+        "description": "IP 10.0.1.72 changed MAC 8 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.1127741,
+        "description": "High number of unique senders: 788 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.1127741,
+        "description": "IP 10.0.1.173 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.1182063,
+        "description": "High number of unique senders: 789 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.1182063,
+        "description": "IP 10.0.1.192 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.1236415,
+        "description": "High number of unique senders: 790 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.129118,
+        "description": "High number of unique senders: 791 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.1348312,
+        "description": "High number of unique senders: 792 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.1348312,
+        "description": "IP 10.0.1.211 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.1404014,
+        "description": "High number of unique senders: 793 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.1468694,
+        "description": "High number of unique senders: 794 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.1468694,
+        "description": "IP 10.0.1.30 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.1528852,
+        "description": "High number of unique senders: 795 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.1585436,
+        "description": "High number of unique senders: 796 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.1585436,
+        "description": "IP 10.0.1.155 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.1642385,
+        "description": "High number of unique senders: 797 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.169901,
+        "description": "High number of unique senders: 798 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.1755445,
+        "description": "High number of unique senders: 799 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.1814282,
+        "description": "High number of unique senders: 800 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.1871667,
+        "description": "High number of unique senders: 801 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.1871667,
+        "description": "High gratuitous ARP ratio: 99.63%"
+      },
+      {
+        "timestamp": 1753626924.1928763,
+        "description": "High number of unique senders: 802 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.1928763,
+        "description": "IP 10.0.1.114 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.198658,
+        "description": "High number of unique senders: 803 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.2043273,
+        "description": "High number of unique senders: 804 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.2043273,
+        "description": "IP 10.0.1.224 changed MAC 7 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.2100637,
+        "description": "High number of unique senders: 805 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.2158582,
+        "description": "High number of unique senders: 806 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.2158582,
+        "description": "IP 10.0.1.97 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.2217722,
+        "description": "High number of unique senders: 807 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.2217722,
+        "description": "IP 10.0.1.145 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.2280648,
+        "description": "High number of unique senders: 808 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.2342932,
+        "description": "High number of unique senders: 809 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.2342932,
+        "description": "IP 10.0.1.20 changed MAC 6 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.2403793,
+        "description": "High number of unique senders: 810 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.2466314,
+        "description": "High number of unique senders: 811 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.2526586,
+        "description": "High number of unique senders: 812 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.2585547,
+        "description": "High number of unique senders: 813 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.2585547,
+        "description": "IP 10.0.1.237 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.2647176,
+        "description": "High number of unique senders: 814 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.2647176,
+        "description": "IP 10.0.1.77 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.2706923,
+        "description": "High number of unique senders: 815 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.2768757,
+        "description": "High number of unique senders: 816 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.2829173,
+        "description": "High number of unique senders: 817 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.2829173,
+        "description": "IP 10.0.1.22 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.2888663,
+        "description": "High number of unique senders: 818 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.2948964,
+        "description": "High number of unique senders: 819 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.2948964,
+        "description": "IP 10.0.1.65 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.3010526,
+        "description": "High number of unique senders: 820 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.307186,
+        "description": "High number of unique senders: 821 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.3133512,
+        "description": "High number of unique senders: 822 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.3133512,
+        "description": "High gratuitous ARP ratio: 99.64%"
+      },
+      {
+        "timestamp": 1753626924.3133512,
+        "description": "IP 10.0.1.44 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.3196645,
+        "description": "High number of unique senders: 823 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.3260999,
+        "description": "High number of unique senders: 824 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.3260999,
+        "description": "IP 10.0.1.98 changed MAC 10 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.33247,
+        "description": "High number of unique senders: 825 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.33247,
+        "description": "IP 10.0.1.10 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.3391225,
+        "description": "High number of unique senders: 826 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.3391225,
+        "description": "IP 10.0.1.170 changed MAC 6 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.3458424,
+        "description": "High number of unique senders: 827 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.3458424,
+        "description": "IP 10.0.1.253 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.3525229,
+        "description": "High number of unique senders: 828 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.3525229,
+        "description": "IP 10.0.1.65 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.3590403,
+        "description": "High number of unique senders: 829 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.3658385,
+        "description": "High number of unique senders: 830 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.3658385,
+        "description": "IP 10.0.1.179 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.3729494,
+        "description": "High number of unique senders: 831 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.3799834,
+        "description": "High number of unique senders: 832 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.3799834,
+        "description": "IP 10.0.1.167 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.3870544,
+        "description": "High number of unique senders: 833 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.3870544,
+        "description": "IP 10.0.1.132 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.3938634,
+        "description": "High number of unique senders: 834 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.4007888,
+        "description": "High number of unique senders: 835 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.4007888,
+        "description": "IP 10.0.1.170 changed MAC 7 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.4077225,
+        "description": "High number of unique senders: 836 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.4148304,
+        "description": "High number of unique senders: 837 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.4148304,
+        "description": "IP 10.0.1.238 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.4222825,
+        "description": "High number of unique senders: 838 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.4222825,
+        "description": "IP 10.0.1.121 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.429837,
+        "description": "High number of unique senders: 839 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.4372265,
+        "description": "High number of unique senders: 840 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.4444892,
+        "description": "High number of unique senders: 841 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.4444892,
+        "description": "IP 10.0.1.101 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.4519086,
+        "description": "High number of unique senders: 842 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.4519086,
+        "description": "IP 10.0.1.48 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.4591644,
+        "description": "High number of unique senders: 843 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.4669838,
+        "description": "High number of unique senders: 844 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.4669838,
+        "description": "IP 10.0.1.38 changed MAC 6 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.4743352,
+        "description": "High number of unique senders: 845 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.4817915,
+        "description": "High number of unique senders: 846 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.4817915,
+        "description": "High gratuitous ARP ratio: 99.65%"
+      },
+      {
+        "timestamp": 1753626924.4891412,
+        "description": "High number of unique senders: 847 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.4964797,
+        "description": "High number of unique senders: 848 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.5037704,
+        "description": "High number of unique senders: 849 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.511375,
+        "description": "High number of unique senders: 850 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.511375,
+        "description": "IP 10.0.1.175 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.518996,
+        "description": "High number of unique senders: 851 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.518996,
+        "description": "IP 10.0.1.171 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.5267768,
+        "description": "High number of unique senders: 852 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.534379,
+        "description": "High number of unique senders: 853 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.534379,
+        "description": "IP 10.0.1.20 changed MAC 7 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.542104,
+        "description": "High number of unique senders: 854 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.542104,
+        "description": "IP 10.0.1.250 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.5497775,
+        "description": "High number of unique senders: 855 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.5497775,
+        "description": "IP 10.0.1.99 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.5575645,
+        "description": "High number of unique senders: 856 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.5655437,
+        "description": "High number of unique senders: 857 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.5733953,
+        "description": "High number of unique senders: 858 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.5733953,
+        "description": "IP 10.0.1.179 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.5812163,
+        "description": "High number of unique senders: 859 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.5812163,
+        "description": "IP 10.0.1.154 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.5891778,
+        "description": "High number of unique senders: 860 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.5891778,
+        "description": "IP 10.0.1.184 changed MAC 6 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.5970676,
+        "description": "High number of unique senders: 861 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.5970676,
+        "description": "IP 10.0.1.154 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.6068995,
+        "description": "High number of unique senders: 862 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.6153157,
+        "description": "High number of unique senders: 863 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.6153157,
+        "description": "IP 10.0.1.253 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.6236389,
+        "description": "High number of unique senders: 864 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.6327467,
+        "description": "High number of unique senders: 865 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.6327467,
+        "description": "IP 10.0.1.156 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.6428874,
+        "description": "High number of unique senders: 866 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.6511226,
+        "description": "High number of unique senders: 867 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.6634915,
+        "description": "High number of unique senders: 868 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.6634915,
+        "description": "IP 10.0.1.205 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.6721065,
+        "description": "High number of unique senders: 869 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.6808019,
+        "description": "High number of unique senders: 870 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.6808019,
+        "description": "High gratuitous ARP ratio: 99.66%"
+      },
+      {
+        "timestamp": 1753626924.6808019,
+        "description": "IP 10.0.1.167 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.6891627,
+        "description": "High number of unique senders: 871 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.6891627,
+        "description": "IP 10.0.1.91 changed MAC 5 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.6983051,
+        "description": "High number of unique senders: 872 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.7072248,
+        "description": "High number of unique senders: 873 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.7072248,
+        "description": "IP 10.0.1.59 changed MAC 8 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.7161431,
+        "description": "High number of unique senders: 874 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.7161431,
+        "description": "IP 10.0.1.137 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.7250586,
+        "description": "High number of unique senders: 875 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.7250586,
+        "description": "IP 10.0.1.39 changed MAC 4 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.7339015,
+        "description": "High number of unique senders: 876 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.7429283,
+        "description": "High number of unique senders: 877 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.7519877,
+        "description": "High number of unique senders: 878 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.7612884,
+        "description": "High number of unique senders: 879 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.7702248,
+        "description": "High number of unique senders: 880 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.7702248,
+        "description": "IP 10.0.1.6 changed MAC 6 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.7790852,
+        "description": "High number of unique senders: 881 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.7884715,
+        "description": "High number of unique senders: 882 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.7976878,
+        "description": "High number of unique senders: 883 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.807252,
+        "description": "High number of unique senders: 884 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.807252,
+        "description": "IP 10.0.1.56 changed MAC 7 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.8163426,
+        "description": "High number of unique senders: 885 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.8163426,
+        "description": "IP 10.0.1.155 changed MAC 6 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.8254673,
+        "description": "High number of unique senders: 886 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.8347435,
+        "description": "High number of unique senders: 887 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.8439496,
+        "description": "High number of unique senders: 888 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.8439496,
+        "description": "IP 10.0.1.114 changed MAC 6 times in 5 minutes"
+      },
+      {
+        "timestamp": 1753626924.8532434,
+        "description": "High number of unique senders: 889 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.8621063,
+        "description": "High number of unique senders: 890 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.8712218,
+        "description": "High number of unique senders: 891 in 1 minute"
+      },
+      {
+        "timestamp": 1753626924.8804839,
+        "description": "High number of unique senders: 892 in 1 minute"
+      }
+    ]
+  },
+  "real_time_stats": {
+    "packets_per_second": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      163
+    ],
+    "unique_senders": [],
+    "gratuitous_ratio": [],
+    "timestamps": [
+      1753626884.5800893,
+      1753626889.5853024,
+      1753626894.5904574,
+      1753626899.5738251,
+      1753626904.5785575,
+      1753626909.5836887,
+      1753626914.5840046,
+      1753626919.5892098,
+      1753626924.6021912
+    ]
+  },
+  "recommendations": [
+    "Implement ARP rate limiting",
+    "Configure static ARP entries for critical devices",
+    "Deploy network segmentation",
+    "Monitor ARP table changes",
+    "Consider ARP inspection mechanisms"
+  ],
+  "generated_by": "ARP DoS Storm Observer Container"
+}
