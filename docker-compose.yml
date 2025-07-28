@@ -8,7 +8,7 @@ services:
       dockerfile: Dockerfile
     container_name: arp_attacker
     hostname: attacker
-    privileged: true  # Required for raw sockets
+    privileged: true # Required for raw sockets
     cap_add:
       - NET_ADMIN
       - NET_RAW
@@ -29,7 +29,7 @@ services:
       - observer
     stdin_open: true
     tty: true
-    command: ["python", "/app/attacker_main.py"]
+    command: [ "python", "/app/attacker_main.py" ]
 
   # Victim container - simulates target network services
   victim:
@@ -50,7 +50,7 @@ services:
       - GATEWAY_IP=10.0.1.1
     stdin_open: true
     tty: true
-    command: ["python", "/app/victim_main.py"]
+    command: [ "python", "/app/victim_main.py" ]
 
   # Observer container - monitors and analyzes traffic
   observer:
@@ -59,7 +59,7 @@ services:
       dockerfile: Dockerfile
     container_name: arp_observer
     hostname: observer
-    privileged: true  # Required for packet capture
+    privileged: true # Required for packet capture
     cap_add:
       - NET_ADMIN
       - NET_RAW
@@ -78,7 +78,7 @@ services:
       - SUBNET=10.0.1
     stdin_open: true
     tty: true
-    command: ["python", "/app/observer_main.py"]
+    command: [ "python", "/app/observer_main.py" ]
 
   # Web Monitor container - dashboard interface
   web_monitor:
@@ -88,11 +88,13 @@ services:
     container_name: arp_web_monitor
     hostname: web_monitor
     ports:
-      - "8080:8080"  # Bind to monitoring interface
+      - "8080:8080" # Bind to monitoring interface
     networks:
-      arp_lab:  # For lab communication
+      arp_lab:
+        # For lab communication
         ipv4_address: 10.0.1.40
-      monitor_net:  # Dedicated monitoring network
+      monitor_net:
+        # Dedicated monitoring network
         ipv4_address: 192.168.100.10
     volumes:
       - ./logs:/app/logs
@@ -111,8 +113,46 @@ services:
       - observer
     stdin_open: true
     tty: true
-    command: ["python", "monitor_main.py"]
+    command: [ "python", "monitor_main.py" ]
 
+  # Defender container - active protection against ARP attacks
+  defender:
+    build:
+      context: ./defender
+      dockerfile: Dockerfile
+    container_name: arp_defender
+    hostname: defender
+    privileged: true # Required for iptables and raw sockets
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+      - SYS_ADMIN
+    networks:
+      arp_lab:
+        ipv4_address: 10.0.1.50
+      monitor_net:
+        ipv4_address: 192.168.100.20
+    ports:
+      - "8082:8082" # Defense dashboard
+      - "8083:8083" # Defense API
+    volumes:
+      - ./logs:/app/logs
+      - ./results:/app/results
+      - ./captures:/app/captures
+    environment:
+      - DEFENDER_IP=10.0.1.50
+      - ATTACKER_IP=10.0.1.10
+      - VICTIM_IP=10.0.1.20
+      - OBSERVER_IP=10.0.1.30
+      - MONITOR_IP=10.0.1.40
+      - GATEWAY_IP=10.0.1.1
+      - SUBNET=10.0.1
+    depends_on:
+      - victim
+      - observer
+    stdin_open: true
+    tty: true
+    command: [ "python", "/app/defense_main.py" ]
 
 networks:
   arp_lab:

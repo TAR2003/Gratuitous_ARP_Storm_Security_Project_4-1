@@ -1,0 +1,93 @@
+{
+  "protection_level": "high",
+  "auto_mitigation": true,
+  "learning_mode": true,
+  "defense_strategies": {
+    "rate_limiting": {
+      "enabled": true,
+      "global_arp_pps": 50,
+      "per_host_arp_pps": 10,
+      "burst_allowance": 20
+    },
+    "static_arp_protection": {
+      "enabled": true,
+      "auto_create": true,
+      "refresh_interval": 300
+    },
+    "dynamic_blacklisting": {
+      "enabled": true,
+      "blacklist_duration": 3600,
+      "auto_unblock": true
+    },
+    "anomaly_detection": {
+      "enabled": true,
+      "learning_period": 3600,
+      "confidence_threshold": 0.7
+    }
+  },
+  "thresholds": {
+    "packets_per_second": 10,
+    "unique_senders_per_minute": 5,
+    "gratuitous_arp_ratio": 0.3,
+    "mac_changes_per_ip": 1,
+    "suspicious_score": 0.7
+  },
+  "protected_networks": [
+    "10.0.1.0/24",
+    "192.168.1.0/24"
+  ],
+  "critical_devices": {
+    "10.0.1.1": {
+      "type": "gateway",
+      "protection_level": "critical",
+      "static_arp": true
+    },
+    "10.0.1.30": {
+      "type": "monitor",
+      "protection_level": "high",
+      "static_arp": true
+    },
+    "10.0.1.40": {
+      "type": "web_monitor",
+      "protection_level": "medium",
+      "static_arp": false
+    }
+  },
+  "whitelisted_devices": {
+    "10.0.1.20": {
+      "type": "victim",
+      "reason": "test_target"
+    }
+  },
+  "alerting": {
+    "enabled": true,
+    "alert_file": "/app/logs/security_alerts.json",
+    "severity_levels": [
+      "LOW",
+      "MEDIUM",
+      "HIGH",
+      "CRITICAL"
+    ],
+    "auto_escalation": true
+  },
+  "logging": {
+    "level": "INFO",
+    "max_file_size": "100MB",
+    "backup_count": 5,
+    "detailed_packet_logs": false
+  },
+  "machine_learning": {
+    "enabled": true,
+    "model_type": "isolation_forest",
+    "training_samples": 10000,
+    "retrain_interval": 7200,
+    "feature_importance": true
+  },
+  "response_actions": {
+    "block_suspicious_mac": true,
+    "rate_limit_suspicious_ip": true,
+    "reinforce_static_arp": true,
+    "alert_administrators": true,
+    "auto_recovery": true
+  }
+}
